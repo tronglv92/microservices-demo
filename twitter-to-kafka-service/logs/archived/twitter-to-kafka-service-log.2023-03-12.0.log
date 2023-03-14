@@ -1,0 +1,132 @@
+2023-03-10 15:20:54 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication on MacBook-Pro-cua-luong.local with PID 14834 (/Users/luongvantrong/backend/microservice/java/microservices-demo/microservices-demo/twitter-to-kafka-service/target/classes started by luongvantrong in /Users/luongvantrong/backend/microservice/java/microservices-demo/microservices-demo)
+2023-03-10 15:20:54 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2023-03-10 15:20:54 [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to read candidate component class: file [/Users/luongvantrong/backend/microservice/java/microservices-demo/microservices-demo/twitter-to-kafka-service/target/classes/com/microservices/demo/twitter/to/kafka/service/TwitterToKafkaServiceApplication.class]; nested exception is org.springframework.core.NestedIOException: ASM ClassReader failed to parse class file - probably due to a new Java class file version that isn't supported yet: file [/Users/luongvantrong/backend/microservice/java/microservices-demo/microservices-demo/twitter-to-kafka-service/target/classes/com/microservices/demo/twitter/to/kafka/service/TwitterToKafkaServiceApplication.class]; nested exception is java.lang.IllegalArgumentException: Unsupported class file major version 61
+2023-03-10 15:20:54 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to read candidate component class: file [/Users/luongvantrong/backend/microservice/java/microservices-demo/microservices-demo/twitter-to-kafka-service/target/classes/com/microservices/demo/twitter/to/kafka/service/TwitterToKafkaServiceApplication.class]; nested exception is org.springframework.core.NestedIOException: ASM ClassReader failed to parse class file - probably due to a new Java class file version that isn't supported yet: file [/Users/luongvantrong/backend/microservice/java/microservices-demo/microservices-demo/twitter-to-kafka-service/target/classes/com/microservices/demo/twitter/to/kafka/service/TwitterToKafkaServiceApplication.class]; nested exception is java.lang.IllegalArgumentException: Unsupported class file major version 61
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:452)
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.findCandidateComponents(ClassPathScanningCandidateComponentProvider.java:315)
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:276)
+	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:132)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:296)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:250)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:207)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:175)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:319)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:236)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:280)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:96)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:707)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:533)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at service.kafka.to.twitter.com.microservices.demo.common.config.TwitterToKafkaServiceApplication.main(TwitterToKafkaServiceApplication.java:24)
+Caused by: org.springframework.core.NestedIOException: ASM ClassReader failed to parse class file - probably due to a new Java class file version that isn't supported yet: file [/Users/luongvantrong/backend/microservice/java/microservices-demo/microservices-demo/twitter-to-kafka-service/target/classes/com/microservices/demo/twitter/to/kafka/service/TwitterToKafkaServiceApplication.class]; nested exception is java.lang.IllegalArgumentException: Unsupported class file major version 61
+	at org.springframework.core.type.classreading.SimpleMetadataReader.getClassReader(SimpleMetadataReader.java:60)
+	at org.springframework.core.type.classreading.SimpleMetadataReader.<init>(SimpleMetadataReader.java:49)
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:103)
+	at org.springframework.core.type.classreading.CachingMetadataReaderFactory.getMetadataReader(CachingMetadataReaderFactory.java:123)
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:429)
+	... 20 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 61
+	at org.springframework.asm.ClassReader.<init>(ClassReader.java:196)
+	at org.springframework.asm.ClassReader.<init>(ClassReader.java:177)
+	at org.springframework.asm.ClassReader.<init>(ClassReader.java:163)
+	at org.springframework.asm.ClassReader.<init>(ClassReader.java:284)
+	at org.springframework.core.type.classreading.SimpleMetadataReader.getClassReader(SimpleMetadataReader.java:57)
+	... 24 common frames omitted
+2023-03-10 15:28:39 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.6 on MacBook-Pro-cua-luong.local with PID 15036 (/Users/luongvantrong/backend/microservice/java/microservices-demo/microservices-demo/twitter-to-kafka-service/target/classes started by luongvantrong in /Users/luongvantrong/backend/microservice/java/microservices-demo/microservices-demo)
+2023-03-10 15:28:39 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2023-03-10 15:28:40 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.485 seconds (JVM running for 0.757)
+2023-03-10 15:28:40 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
+2023-03-10 15:28:40 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Kafka, Elasticsearch]
+2023-03-10 15:28:40 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Hello microservices!
+2023-03-10 16:00:04 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.6 on MacBook-Pro-cua-luong.local with PID 15798 (/Users/luongvantrong/backend/microservice/java/microservices-demo/microservices-demo/twitter-to-kafka-service/target/classes started by luongvantrong in /Users/luongvantrong/backend/microservice/java/microservices-demo/microservices-demo)
+2023-03-10 16:00:04 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2023-03-10 16:00:04 [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterToKafkaServiceApplication': Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'runner.service.kafka.to.twitter.com.microservices.demo.common.config.StreamRunner' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2023-03-10 16:00:04 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-03-10 16:00:04 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of constructor in service.kafka.to.twitter.com.microservices.demo.common.config.TwitterToKafkaServiceApplication required a bean of type 'runner.service.kafka.to.twitter.com.microservices.demo.common.config.StreamRunner' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'runner.service.kafka.to.twitter.com.microservices.demo.common.config.StreamRunner' in your configuration.
+
+2023-03-10 17:52:58 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.6 on MacBook-Pro-cua-luong.local with PID 16979 (/Users/luongvantrong/backend/microservice/java/microservices-demo/microservices-demo/twitter-to-kafka-service/target/classes started by luongvantrong in /Users/luongvantrong/backend/microservice/java/microservices-demo/microservices-demo)
+2023-03-10 17:52:58 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2023-03-10 17:52:58 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.522 seconds (JVM running for 0.76)
+2023-03-10 17:52:58 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
+2023-03-10 17:52:58 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Kafka, Elasticsearch]
+2023-03-10 17:52:58 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Hello microservices!
+2023-03-10 17:52:58 [Twitter Stream consumer /  [1][initializing]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2023-03-10 17:52:58 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Started filtering twitter stream for keywords [Java, Microservices, Kafka, Elasticsearch]
+2023-03-10 17:52:59 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - 401:Authentication credentials (https://dev.twitter.com/pages/auth) were missing or incorrect. Ensure that you have set valid consumer key/secret, access token/secret, and the system clock is in sync.
+<html>\n<head>\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>\n<title>Error 401 Unauthorized</title>
+</head>
+<body>
+<h2>HTTP ERROR: 401</h2>
+<p>Problem accessing '/1.1/statuses/filter.json'. Reason:
+<pre>    Unauthorized</pre>
+</body>
+</html>
+
+2023-03-10 17:52:59 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 10000 milliseconds
+2023-03-10 17:53:09 [Twitter Stream consumer /  [1][Waiting for 10000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2023-03-10 17:53:09 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - 401:Authentication credentials (https://dev.twitter.com/pages/auth) were missing or incorrect. Ensure that you have set valid consumer key/secret, access token/secret, and the system clock is in sync.
+<html>\n<head>\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>\n<title>Error 401 Unauthorized</title>
+</head>
+<body>
+<h2>HTTP ERROR: 401</h2>
+<p>Problem accessing '/1.1/statuses/filter.json'. Reason:
+<pre>    Unauthorized</pre>
+</body>
+</html>
+
+2023-03-10 17:53:09 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 20000 milliseconds
+2023-03-10 17:53:29 [Twitter Stream consumer /  [1][Waiting for 20000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2023-03-10 17:53:30 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - 401:Authentication credentials (https://dev.twitter.com/pages/auth) were missing or incorrect. Ensure that you have set valid consumer key/secret, access token/secret, and the system clock is in sync.
+<html>\n<head>\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>\n<title>Error 401 Unauthorized</title>
+</head>
+<body>
+<h2>HTTP ERROR: 401</h2>
+<p>Problem accessing '/1.1/statuses/filter.json'. Reason:
+<pre>    Unauthorized</pre>
+</body>
+</html>
+
+2023-03-10 17:53:30 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 40000 milliseconds
+2023-03-10 17:53:34 [SpringApplicationShutdownHook] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Closing twitter stream!
+2023-03-10 17:53:36 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.6 on MacBook-Pro-cua-luong.local with PID 16995 (/Users/luongvantrong/backend/microservice/java/microservices-demo/microservices-demo/twitter-to-kafka-service/target/classes started by luongvantrong in /Users/luongvantrong/backend/microservice/java/microservices-demo/microservices-demo)
+2023-03-10 17:53:36 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2023-03-10 17:53:36 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.431 seconds (JVM running for 0.645)
+2023-03-10 17:53:36 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
+2023-03-10 17:53:36 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Kafka, Elasticsearch]
+2023-03-10 17:53:36 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Hello microservices!
+2023-03-10 17:53:36 [main] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservices, Kafka, Elasticsearch]
+2023-03-10 17:53:36 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Lorem libero consectetuer posuere pulvinar magna posuere amet Java ultricies sit malesuada adipiscing pulvinar Maecenas
+2023-03-10 17:53:46 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text purus lectus consectetuer lectus Lorem porttitor posuere Kafka Lorem dolor adipiscing elit libero
+2023-03-10 17:53:56 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text libero ipsum adipiscing Maecenas Maecenas adipiscing porttitor dolor Kafka posuere sit dolor ipsum magna porttitor lectus
+2023-03-10 17:54:06 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text libero purus ultricies Fusce Kafka congue ultricies
+2023-03-10 17:54:16 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Maecenas sed consectetuer Elasticsearch pulvinar consectetuer
+2023-03-10 17:54:26 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text dolor sit malesuada sed Fusce posuere Elasticsearch pulvinar Lorem posuere lectus
+2023-03-10 17:54:36 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text dolor amet ipsum adipiscing congue Kafka pulvinar dolor congue malesuada
+2023-03-10 17:54:46 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text libero ultricies lectus Fusce sit Lorem porttitor Fusce Java dolor adipiscing lectus massa Lorem Maecenas
+2023-03-10 17:54:56 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text libero Fusce ultricies ultricies pulvinar Java Fusce sed congue dolor
+2023-03-10 17:55:06 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text dolor Fusce Fusce lectus porttitor magna amet Kafka consectetuer Lorem massa porttitor consectetuer ipsum
+2023-03-10 17:55:16 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text sit massa amet dolor Java porttitor ultricies
+2023-03-10 17:55:26 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text ipsum sit magna Lorem Maecenas Maecenas ultricies Elasticsearch purus pulvinar dolor adipiscing posuere
+2023-03-10 17:55:36 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text sit Lorem elit malesuada amet Java sit amet Lorem libero
+2023-03-10 17:55:46 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text magna massa posuere magna dolor Kafka libero sed ultricies elit
