@@ -18,6 +18,7 @@ public class TwitterToKafkaServiceApplication implements CommandLineRunner {
     private static final Logger LOG = LoggerFactory.getLogger(TwitterToKafkaServiceApplication.class);
 
     private final StreamRunner streamRunner;
+
     private final StreamInitializer streamInitializer;
 
 
