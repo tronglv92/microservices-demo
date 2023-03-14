@@ -1,0 +1,3 @@
+/Users/luongvantrong/backend/microservice/java/microservices-demo/microservices-demo/kafka/kafka-producer/src/main/java/com/microservices/demo/kafka/producer/config/KafkaProducerConfig.java
+/Users/luongvantrong/backend/microservice/java/microservices-demo/microservices-demo/kafka/kafka-producer/src/main/java/com/microservices/demo/kafka/producer/config/service/KafkaProducer.java
+/Users/luongvantrong/backend/microservice/java/microservices-demo/microservices-demo/kafka/kafka-producer/src/main/java/com/microservices/demo/kafka/producer/config/service/impl/TwitterKafkaProducer.java

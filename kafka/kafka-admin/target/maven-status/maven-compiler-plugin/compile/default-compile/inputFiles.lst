@@ -1,0 +1,4 @@
+/Users/luongvantrong/backend/microservice/java/microservices-demo/microservices-demo/kafka/kafka-admin/src/main/java/com/microservices/demo/kafka/admin/client/KafkaAdminClient.java
+/Users/luongvantrong/backend/microservice/java/microservices-demo/microservices-demo/kafka/kafka-admin/src/main/java/com/microservices/demo/kafka/admin/config/KafkaAdminConfig.java
+/Users/luongvantrong/backend/microservice/java/microservices-demo/microservices-demo/kafka/kafka-admin/src/main/java/com/microservices/demo/kafka/admin/exception/KafkaClientException.java
+/Users/luongvantrong/backend/microservice/java/microservices-demo/microservices-demo/kafka/kafka-admin/src/main/java/com/microservices/demo/kafka/admin/config/WebClientConfig.java
