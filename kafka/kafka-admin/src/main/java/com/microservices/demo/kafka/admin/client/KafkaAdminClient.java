@@ -64,7 +64,7 @@ public class KafkaAdminClient {
         Long sleepTimeMs = retryConfigData.getSleepTimeMs();
         for (String topic : kafkaConfigData.getTopicNamesToCreate()) {
             while (!isTopicCreated(topics, topic)) {
-                checkMaxRetry(retryCount++, maxRetry);
+                checkMaxRetry(retryCount++, maxRetry,true);
                 sleep(sleepTimeMs);
                 sleepTimeMs *= multiplier;
                 topics = getTopics();
@@ -78,7 +78,7 @@ public class KafkaAdminClient {
         int multiplier = retryConfigData.getMultiplier().intValue();
         Long sleepTimeMs = retryConfigData.getSleepTimeMs();
         while (!getSchemaRegistryStatus().is2xxSuccessful()) {
-            checkMaxRetry(retryCount++, maxRetry);
+            checkMaxRetry(retryCount++, maxRetry,false);
             sleep(sleepTimeMs);
             sleepTimeMs *= multiplier;
         }
@@ -106,8 +106,9 @@ public class KafkaAdminClient {
         }
     }
 
-    private void checkMaxRetry(int retry, Integer maxRetry) {
+    private void checkMaxRetry(int retry, Integer maxRetry,Boolean isCheckTopicCreate) {
         if (retry > maxRetry) {
+            LOG.info("isCheckTopicCreate: {}",isCheckTopicCreate);
             throw new KafkaClientException("Reached max number of retry for reading kafka topic(s)!");
         }
     }

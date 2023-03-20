@@ -1,121 +1,71 @@
-2023-03-14 15:26:56 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
-2023-03-14 15:26:56 [main] INFO  c.m.demo.config.server.ConfigServer - Starting ConfigServer using Java 17.0.6 on MacBook-Pro-cua-luong.local with PID 31140 (/Users/luongvantrong/backend/microservice/java/microservices-demo/microservices-demo/config-server/target/classes started by luongvantrong in /Users/luongvantrong/backend/microservice/java/microservices-demo/microservices-demo)
-2023-03-14 15:26:56 [main] INFO  c.m.demo.config.server.ConfigServer - No active profile set, falling back to default profiles: default
-2023-03-14 15:26:57 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=4203d57d-7515-37c3-887c-c79e721e8373
-2023-03-14 15:26:57 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
-2023-03-14 15:26:57 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
-2023-03-14 15:26:57 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2023-03-14 15:26:57 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
-2023-03-14 15:26:57 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2023-03-14 15:26:57 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 545 ms
-2023-03-14 15:26:57 [main] WARN  org.eclipse.jgit.util.FS_POSIX - null
-2023-03-14 15:27:03 [main] INFO  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - Could not checkout default label main
-org.eclipse.jgit.api.errors.RefNotFoundException: Ref main cannot be resolved
-	at org.eclipse.jgit.api.CheckoutCommand.call(CheckoutCommand.java:223)
-	at org.springframework.cloud.config.server.environment.JGitEnvironmentRepository.checkout(JGitEnvironmentRepository.java:461)
-	at org.springframework.cloud.config.server.environment.JGitEnvironmentRepository.checkoutDefaultBranchWithRetry(JGitEnvironmentRepository.java:386)
-	at org.springframework.cloud.config.server.environment.JGitEnvironmentRepository.initClonedRepository(JGitEnvironmentRepository.java:373)
-	at org.springframework.cloud.config.server.environment.JGitEnvironmentRepository.afterPropertiesSet(JGitEnvironmentRepository.java:277)
-	at org.springframework.cloud.config.server.environment.MultipleJGitEnvironmentRepository.afterPropertiesSet(MultipleJGitEnvironmentRepository.java:66)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:414)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
-	at com.microservices.demo.config.server.ConfigServer.main(ConfigServer.java:11)
-2023-03-14 15:27:03 [main] INFO  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - Will try to checkout master label instead.
-2023-03-14 15:27:03 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
-2023-03-14 15:27:03 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
-2023-03-14 15:27:03 [main] INFO  c.m.demo.config.server.ConfigServer - Started ConfigServer in 6.852 seconds (JVM running for 7.102)
-2023-03-14 15:30:13 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
-2023-03-14 15:30:13 [main] INFO  c.m.demo.config.server.ConfigServer - Starting ConfigServer using Java 17.0.6 on MacBook-Pro-cua-luong.local with PID 31209 (/Users/luongvantrong/backend/microservice/java/microservices-demo/microservices-demo/config-server/target/classes started by luongvantrong in /Users/luongvantrong/backend/microservice/java/microservices-demo/microservices-demo)
-2023-03-14 15:30:13 [main] INFO  c.m.demo.config.server.ConfigServer - No active profile set, falling back to default profiles: default
-2023-03-14 15:30:14 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=4203d57d-7515-37c3-887c-c79e721e8373
-2023-03-14 15:30:14 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
-2023-03-14 15:30:14 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
-2023-03-14 15:30:14 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2023-03-14 15:30:14 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
-2023-03-14 15:30:14 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2023-03-14 15:30:14 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 554 ms
-2023-03-14 15:30:14 [main] WARN  org.eclipse.jgit.util.FS_POSIX - null
-2023-03-14 15:30:17 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
-2023-03-14 15:30:17 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
-2023-03-14 15:30:17 [main] INFO  c.m.demo.config.server.ConfigServer - Started ConfigServer in 3.771 seconds (JVM running for 4.078)
-2023-03-14 15:31:56 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-03-14 15:31:56 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2023-03-14 15:31:56 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
-2023-03-14 15:31:57 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-10949765375906220166/config-client-twitter_to_kafka.yml]' via location 'file:/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-10949765375906220166/'
-2023-03-14 15:31:57 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-10949765375906220166/config-client.yml]' via location 'file:/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-10949765375906220166/'
-2023-03-14 15:32:31 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-10949765375906220166/config-client-twitter_to_kafka.yml]' via location 'file:/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-10949765375906220166/'
-2023-03-14 15:32:31 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-10949765375906220166/config-client.yml]' via location 'file:/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-10949765375906220166/'
-2023-03-14 15:39:38 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
-2023-03-14 15:39:38 [main] INFO  c.m.demo.config.server.ConfigServer - Starting ConfigServer using Java 17.0.6 on MacBook-Pro-cua-luong.local with PID 32310 (/Users/luongvantrong/backend/microservice/java/microservices-demo/microservices-demo/config-server/target/classes started by luongvantrong in /Users/luongvantrong/backend/microservice/java/microservices-demo/microservices-demo)
-2023-03-14 15:39:38 [main] INFO  c.m.demo.config.server.ConfigServer - No active profile set, falling back to default profiles: default
-2023-03-14 15:39:38 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=4203d57d-7515-37c3-887c-c79e721e8373
-2023-03-14 15:39:38 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
-2023-03-14 15:39:38 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
-2023-03-14 15:39:38 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2023-03-14 15:39:38 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
-2023-03-14 15:39:38 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2023-03-14 15:39:38 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 617 ms
-2023-03-14 15:39:39 [main] WARN  org.eclipse.jgit.util.FS_POSIX - null
-2023-03-14 15:39:41 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
-2023-03-14 15:39:41 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
-2023-03-14 15:39:41 [main] INFO  c.m.demo.config.server.ConfigServer - Started ConfigServer in 3.66 seconds (JVM running for 4.098)
-2023-03-14 15:39:47 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-03-14 15:39:47 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2023-03-14 15:39:47 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
-2023-03-14 15:39:49 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-4504469889702325924/config-client-twitter_to_kafka.yml]' via location 'file:/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-4504469889702325924/'
-2023-03-14 15:39:49 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-4504469889702325924/config-client.yml]' via location 'file:/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-4504469889702325924/'
-2023-03-14 15:43:24 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
-2023-03-14 15:43:24 [main] INFO  c.m.demo.config.server.ConfigServer - Starting ConfigServer using Java 17.0.6 on MacBook-Pro-cua-luong.local with PID 32839 (/Users/luongvantrong/backend/microservice/java/microservices-demo/microservices-demo/config-server/target/classes started by luongvantrong in /Users/luongvantrong/backend/microservice/java/microservices-demo/microservices-demo)
-2023-03-14 15:43:24 [main] INFO  c.m.demo.config.server.ConfigServer - No active profile set, falling back to default profiles: default
-2023-03-14 15:43:24 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=4203d57d-7515-37c3-887c-c79e721e8373
-2023-03-14 15:43:25 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
-2023-03-14 15:43:25 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
-2023-03-14 15:43:25 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2023-03-14 15:43:25 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
-2023-03-14 15:43:25 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2023-03-14 15:43:25 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 657 ms
-2023-03-14 15:43:25 [main] WARN  org.eclipse.jgit.util.FS_POSIX - null
-2023-03-14 15:43:27 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
-2023-03-14 15:43:27 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
-2023-03-14 15:43:27 [main] INFO  c.m.demo.config.server.ConfigServer - Started ConfigServer in 3.797 seconds (JVM running for 4.172)
-2023-03-14 15:43:31 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-03-14 15:43:31 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2023-03-14 15:43:31 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-2023-03-14 15:43:32 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-15624061441352695510/config-client-twitter_to_kafka.yml]' via location 'file:/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-15624061441352695510/'
-2023-03-14 15:43:32 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-15624061441352695510/config-client.yml]' via location 'file:/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-15624061441352695510/'
-2023-03-14 15:43:58 [http-nio-8888-exec-2] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-15624061441352695510/config-client-twitter_to_kafka.yml]' via location 'file:/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-15624061441352695510/'
-2023-03-14 15:43:58 [http-nio-8888-exec-2] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-15624061441352695510/config-client.yml]' via location 'file:/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-15624061441352695510/'
-2023-03-14 21:56:51 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
-2023-03-14 21:56:51 [main] INFO  c.m.demo.config.server.ConfigServer - Starting ConfigServer using Java 17.0.6 on 192.168.0.200 with PID 3700 (/Users/luongvantrong/backend/microservice/java/microservices-demo/microservices-demo/config-server/target/classes started by luongvantrong in /Users/luongvantrong/backend/microservice/java/microservices-demo/microservices-demo)
-2023-03-14 21:56:51 [main] INFO  c.m.demo.config.server.ConfigServer - No active profile set, falling back to default profiles: default
-2023-03-14 21:56:52 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=4203d57d-7515-37c3-887c-c79e721e8373
-2023-03-14 21:56:52 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
-2023-03-14 21:56:52 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
-2023-03-14 21:56:52 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2023-03-14 21:56:52 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
-2023-03-14 21:56:52 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2023-03-14 21:56:52 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 635 ms
-2023-03-14 21:56:53 [main] WARN  org.eclipse.jgit.util.FS_POSIX - null
-2023-03-14 21:56:55 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
-2023-03-14 21:56:55 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
-2023-03-14 21:56:55 [main] INFO  c.m.demo.config.server.ConfigServer - Started ConfigServer in 3.785 seconds (JVM running for 4.121)
-2023-03-14 21:57:05 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-03-14 21:57:05 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2023-03-14 21:57:05 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
-2023-03-14 21:57:06 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-13601714700236951604/config-client-twitter_to_kafka.yml]' via location 'file:/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-13601714700236951604/'
-2023-03-14 21:57:06 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-13601714700236951604/config-client.yml]' via location 'file:/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-13601714700236951604/'
+2023-03-20 09:40:45 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2023-03-20 09:40:45 [main] INFO  c.m.demo.config.server.ConfigServer - Starting ConfigServer using Java 17.0.6 on MacBook-Pro-cua-luong.local with PID 3395 (/Users/luongvantrong/backend/microservice/java/microservices-demo/microservices-demo/config-server/target/classes started by luongvantrong in /Users/luongvantrong/backend/microservice/java/microservices-demo/microservices-demo)
+2023-03-20 09:40:45 [main] INFO  c.m.demo.config.server.ConfigServer - No active profile set, falling back to 1 default profile: "default"
+2023-03-20 09:40:45 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=5661a031-9c92-3b67-a98a-91252b007904
+2023-03-20 09:40:45 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2023-03-20 09:40:45 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2023-03-20 09:40:45 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-03-20 09:40:45 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-03-20 09:40:46 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-03-20 09:40:46 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 899 ms
+2023-03-20 09:40:46 [main] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/actuator/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-03-20 09:40:46 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/actuator/**']
+2023-03-20 09:40:46 [main] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/encrypt/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-03-20 09:40:46 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/encrypt/**']
+2023-03-20 09:40:46 [main] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/decrypt/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-03-20 09:40:46 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/decrypt/**']
+2023-03-20 09:40:46 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@108e9837, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@79a201cf, org.springframework.security.web.context.SecurityContextPersistenceFilter@3fcbc766, org.springframework.security.web.header.HeaderWriterFilter@3b481bf5, org.springframework.security.web.csrf.CsrfFilter@1a950fdd, org.springframework.security.web.authentication.logout.LogoutFilter@a85644c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4a058df8, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@6e02721d, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@1cbc5693, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4ea56bdb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@8e25d3f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1b57c345, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3d2f3dcb, org.springframework.security.web.session.SessionManagementFilter@67fb5025, org.springframework.security.web.access.ExceptionTranslationFilter@459003a0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@63fd4dda]
+2023-03-20 09:40:48 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2023-03-20 09:40:48 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2023-03-20 09:40:48 [main] INFO  c.m.demo.config.server.ConfigServer - Started ConfigServer in 4.235 seconds (JVM running for 4.576)
+2023-03-20 09:41:59 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-20 09:41:59 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-03-20 09:41:59 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+2023-03-20 09:42:01 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-1222036315919365106/config-client-elastic_query.yml]' via location 'file:/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-1222036315919365106/'
+2023-03-20 09:42:01 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-1222036315919365106/config-client.yml]' via location 'file:/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-1222036315919365106/'
+2023-03-20 09:52:45 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-1222036315919365106/config-client-elastic_query.yml]' via location 'file:/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-1222036315919365106/'
+2023-03-20 09:52:45 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-1222036315919365106/config-client.yml]' via location 'file:/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-1222036315919365106/'
+2023-03-20 10:01:23 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-1222036315919365106/config-client-elastic_query.yml]' via location 'file:/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-1222036315919365106/'
+2023-03-20 10:01:23 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-1222036315919365106/config-client.yml]' via location 'file:/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-1222036315919365106/'
+2023-03-20 10:08:49 [http-nio-8888-exec-8] INFO  o.s.c.c.s.e.EncryptionController - Encrypted data
+2023-03-20 10:08:56 [http-nio-8888-exec-9] INFO  o.s.c.c.s.e.EncryptionController - Encrypted data
+2023-03-20 10:10:37 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-1222036315919365106/config-client-elastic_query.yml]' via location 'file:/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-1222036315919365106/'
+2023-03-20 10:10:37 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-1222036315919365106/config-client.yml]' via location 'file:/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-1222036315919365106/'
+2023-03-20 10:14:24 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-1222036315919365106/config-client-elastic_query.yml]' via location 'file:/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-1222036315919365106/'
+2023-03-20 10:14:24 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-1222036315919365106/config-client.yml]' via location 'file:/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-1222036315919365106/'
+2023-03-20 10:17:50 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - Fetched for remote master and found 1 updates
+2023-03-20 10:17:50 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-1222036315919365106/config-client-elastic_query.yml]' via location 'file:/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-1222036315919365106/'
+2023-03-20 10:17:50 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-1222036315919365106/config-client.yml]' via location 'file:/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-1222036315919365106/'
+2023-03-20 11:36:40 [http-nio-8888-exec-7] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-1222036315919365106/config-client-elastic_query.yml]' via location 'file:/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-1222036315919365106/'
+2023-03-20 11:36:40 [http-nio-8888-exec-7] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-1222036315919365106/config-client.yml]' via location 'file:/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-1222036315919365106/'
+2023-03-20 11:43:37 [http-nio-8888-exec-9] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-1222036315919365106/config-client-elastic_query.yml]' via location 'file:/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-1222036315919365106/'
+2023-03-20 11:43:37 [http-nio-8888-exec-9] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-1222036315919365106/config-client.yml]' via location 'file:/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-1222036315919365106/'
+2023-03-20 14:03:17 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-1222036315919365106/config-client-elastic_query.yml]' via location 'file:/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-1222036315919365106/'
+2023-03-20 14:03:17 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-1222036315919365106/config-client.yml]' via location 'file:/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-1222036315919365106/'
+2023-03-20 14:07:18 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-1222036315919365106/config-client-elastic_query.yml]' via location 'file:/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-1222036315919365106/'
+2023-03-20 14:07:18 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-1222036315919365106/config-client.yml]' via location 'file:/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-1222036315919365106/'
+2023-03-20 16:20:30 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2023-03-20 16:20:30 [main] INFO  c.m.demo.config.server.ConfigServer - Starting ConfigServer using Java 17.0.6 on MacBook-Pro-cua-luong.local with PID 15464 (/Users/luongvantrong/backend/microservice/java/microservices-demo/microservices-demo/config-server/target/classes started by luongvantrong in /Users/luongvantrong/backend/microservice/java/microservices-demo/microservices-demo)
+2023-03-20 16:20:30 [main] INFO  c.m.demo.config.server.ConfigServer - No active profile set, falling back to 1 default profile: "default"
+2023-03-20 16:20:30 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=5661a031-9c92-3b67-a98a-91252b007904
+2023-03-20 16:20:31 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2023-03-20 16:20:31 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2023-03-20 16:20:31 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-03-20 16:20:31 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-03-20 16:20:31 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-03-20 16:20:31 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1005 ms
+2023-03-20 16:20:31 [main] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/actuator/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-03-20 16:20:31 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/actuator/**']
+2023-03-20 16:20:31 [main] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/encrypt/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-03-20 16:20:31 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/encrypt/**']
+2023-03-20 16:20:31 [main] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/decrypt/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-03-20 16:20:31 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/decrypt/**']
+2023-03-20 16:20:31 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4b87074a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@d3e3085, org.springframework.security.web.context.SecurityContextPersistenceFilter@7d42404e, org.springframework.security.web.header.HeaderWriterFilter@5fdfe8cf, org.springframework.security.web.csrf.CsrfFilter@2233cac0, org.springframework.security.web.authentication.logout.LogoutFilter@3bb9ca38, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@71664560, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1e3f0aea, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@2ba42204, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2180e789, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@31723307, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@8054fe2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@285005b8, org.springframework.security.web.session.SessionManagementFilter@4e8b357d, org.springframework.security.web.access.ExceptionTranslationFilter@3f9b7fe1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3d2f3dcb]
+2023-03-20 16:20:34 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2023-03-20 16:20:34 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2023-03-20 16:20:34 [main] INFO  c.m.demo.config.server.ConfigServer - Started ConfigServer in 5.599 seconds (JVM running for 6.548)
+2023-03-20 16:20:43 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-20 16:20:43 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-03-20 16:20:43 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-03-20 16:20:45 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-7116990867659688513/config-client-elastic_query.yml]' via location 'file:/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-7116990867659688513/'
+2023-03-20 16:20:45 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-7116990867659688513/config-client.yml]' via location 'file:/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-7116990867659688513/'
