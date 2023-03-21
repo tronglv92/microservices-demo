@@ -16,7 +16,7 @@ spring:
           uri: https://github.com/tronglv92/config-server-repository
           default-label: master
           username: tronglv92
-          password: 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
+          password: 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
           clone-on-start: true
     fail-fast: true
   security:
