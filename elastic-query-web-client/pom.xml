@@ -63,6 +63,11 @@
 
             <classifier>osx-aarch_64</classifier>
         </dependency>
+        <dependency>
+            <groupId>com.microservices.demo</groupId>
+            <artifactId>elastic-query-web-client-common</artifactId>
+
+        </dependency>
     </dependencies>
 
     <build>

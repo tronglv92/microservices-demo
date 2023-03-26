@@ -1831,3 +1831,124 @@ Original Stack Trace:
 		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 		at java.base/java.lang.Thread.run(Thread.java:833)
 Caused by: reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+2023-03-21 15:44:16 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2023-03-21 15:44:16 [main] INFO  c.m.d.e.q.w.c.ElasticQueryWebClientApplication - Starting ElasticQueryWebClientApplication using Java 17.0.6 on MacBook-Pro-cua-luong.local with PID 17203 (/Users/luongvantrong/backend/microservice/java/microservices-demo/microservices-demo/elastic-query-web-client/target/classes started by luongvantrong in /Users/luongvantrong/backend/microservice/java/microservices-demo/microservices-demo)
+2023-03-21 15:44:16 [main] INFO  c.m.d.e.q.w.c.ElasticQueryWebClientApplication - The following 1 profile is active: "elastic_query_web"
+2023-03-21 15:44:16 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2023-03-21 15:44:16 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=elastic-query-web-client,config-client, profiles=[elastic_query_web], label=null, version=1e1cc9de21c9c50350b56a4ad027f4ce556fec84, state=null
+2023-03-21 15:44:17 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=176f3224-9b8b-3170-88fe-49f8cd49dd1c
+2023-03-21 15:44:17 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-21 15:44:17 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-21 15:44:17 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-03-21 15:44:17 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8184 (http)
+2023-03-21 15:44:17 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8184"]
+2023-03-21 15:44:17 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-03-21 15:44:17 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-03-21 15:44:17 [main] INFO  o.a.c.c.C.[.[.[/elastic-query-web-client] - Initializing Spring embedded WebApplicationContext
+2023-03-21 15:44:17 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 608 ms
+2023-03-21 15:44:18 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1e6bd263, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@394a6d2b, org.springframework.security.web.context.SecurityContextPersistenceFilter@3719360c, org.springframework.security.web.header.HeaderWriterFilter@7b8aebd0, org.springframework.security.web.csrf.CsrfFilter@4628a02b, org.springframework.security.web.authentication.logout.LogoutFilter@13ca16bf, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@f18b738, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3855d9b2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@34aa8b61, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@635ff2a5, org.springframework.security.web.session.SessionManagementFilter@987a0bb, org.springframework.security.web.access.ExceptionTranslationFilter@147e0734, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@d108406]
+2023-03-21 15:44:18 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-03-21 15:44:18 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-03-21 15:44:18 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8184"]
+2023-03-21 15:44:18 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8184 (http) with context path '/elastic-query-web-client'
+2023-03-21 15:44:18 [main] INFO  c.m.d.e.q.w.c.ElasticQueryWebClientApplication - Started ElasticQueryWebClientApplication in 4.749 seconds (JVM running for 5.176)
+2023-03-21 15:44:34 [http-nio-8184-exec-1] INFO  o.a.c.c.C.[.[.[/elastic-query-web-client] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-21 15:44:34 [http-nio-8184-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-03-21 15:44:34 [http-nio-8184-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2023-03-21 15:44:34 [http-nio-8184-exec-1] ERROR c.m.d.e.q.w.c.a.e.h.ElasticQueryWebClientErrorHandler - Internal server error!
+org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.handleNoMatch(RequestMappingInfoHandlerMapping.java:253)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:442)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:383)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:125)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:67)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:498)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1265)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1047)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:670)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:337)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:122)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:109)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:198)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:117)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:112)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:82)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:221)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:186)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-03-21 15:44:41 [http-nio-8184-exec-4] INFO  c.m.d.e.q.w.c.api.QueryController - Querying with text test
+2023-03-21 15:44:41 [http-nio-8184-exec-4] INFO  c.m.d.e.q.w.c.s.i.TwitterElasticQueryWebClient - Querying by text test
+2023-03-21 15:44:46 [http-nio-8184-exec-5] INFO  c.m.d.e.q.w.c.api.QueryController - Querying with text test
+2023-03-21 15:44:46 [http-nio-8184-exec-5] INFO  c.m.d.e.q.w.c.s.i.TwitterElasticQueryWebClient - Querying by text test

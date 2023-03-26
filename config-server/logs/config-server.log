@@ -1,172 +1,37 @@
-2023-03-21 11:18:21 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
-2023-03-21 11:18:21 [main] INFO  c.m.demo.config.server.ConfigServer - Starting ConfigServer using Java 17.0.6 on MacBook-Pro-cua-luong.local with PID 9643 (/Users/luongvantrong/backend/microservice/java/microservices-demo/microservices-demo/config-server/target/classes started by luongvantrong in /Users/luongvantrong/backend/microservice/java/microservices-demo/microservices-demo)
-2023-03-21 11:18:21 [main] INFO  c.m.demo.config.server.ConfigServer - No active profile set, falling back to 1 default profile: "default"
-2023-03-21 11:18:22 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=5661a031-9c92-3b67-a98a-91252b007904
-2023-03-21 11:18:22 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
-2023-03-21 11:18:22 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
-2023-03-21 11:18:22 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2023-03-21 11:18:22 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
-2023-03-21 11:18:22 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2023-03-21 11:18:22 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 560 ms
-2023-03-21 11:18:22 [main] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/actuator/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
-2023-03-21 11:18:22 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/actuator/**']
-2023-03-21 11:18:22 [main] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/encrypt/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
-2023-03-21 11:18:22 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/encrypt/**']
-2023-03-21 11:18:22 [main] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/decrypt/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
-2023-03-21 11:18:22 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/decrypt/**']
-2023-03-21 11:18:22 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4ef4f627, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4ea56bdb, org.springframework.security.web.context.SecurityContextPersistenceFilter@67fb5025, org.springframework.security.web.header.HeaderWriterFilter@12417468, org.springframework.security.web.csrf.CsrfFilter@2519026b, org.springframework.security.web.authentication.logout.LogoutFilter@2401856, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2d258eff, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1d4f5506, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@32227215, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7fe07361, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@392781e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@79b18230, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@108e9837, org.springframework.security.web.session.SessionManagementFilter@d325518, org.springframework.security.web.access.ExceptionTranslationFilter@364fd4ae, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@55c57422]
-2023-03-21 11:18:24 [main] WARN  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - Error occured cloning to base directory.
-org.eclipse.jgit.api.errors.TransportException: https://github.com/tronglv92/config-server-repository: not authorized
-	at org.eclipse.jgit.api.FetchCommand.call(FetchCommand.java:224)
-	at org.eclipse.jgit.api.CloneCommand.fetch(CloneCommand.java:311)
-	at org.eclipse.jgit.api.CloneCommand.call(CloneCommand.java:182)
-	at org.springframework.cloud.config.server.environment.JGitEnvironmentRepository.cloneToBasedir(JGitEnvironmentRepository.java:651)
-	at org.springframework.cloud.config.server.environment.JGitEnvironmentRepository.initClonedRepository(JGitEnvironmentRepository.java:356)
-	at org.springframework.cloud.config.server.environment.JGitEnvironmentRepository.afterPropertiesSet(JGitEnvironmentRepository.java:277)
-	at org.springframework.cloud.config.server.environment.MultipleJGitEnvironmentRepository.afterPropertiesSet(MultipleJGitEnvironmentRepository.java:66)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
-	at com.microservices.demo.config.server.ConfigServer.main(ConfigServer.java:11)
-Caused by: org.eclipse.jgit.errors.TransportException: https://github.com/tronglv92/config-server-repository: not authorized
-	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:685)
-	at org.eclipse.jgit.transport.TransportHttp.openFetch(TransportHttp.java:465)
-	at org.eclipse.jgit.transport.FetchProcess.executeImp(FetchProcess.java:142)
-	at org.eclipse.jgit.transport.FetchProcess.execute(FetchProcess.java:94)
-	at org.eclipse.jgit.transport.Transport.fetch(Transport.java:1309)
-	at org.eclipse.jgit.api.FetchCommand.call(FetchCommand.java:213)
-	... 24 common frames omitted
-2023-03-21 11:18:24 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'defaultEnvironmentRepository' defined in class path resource [org/springframework/cloud/config/server/config/DefaultRepositoryConfiguration.class]: Invocation of init method failed; nested exception is org.eclipse.jgit.api.errors.TransportException: https://github.com/tronglv92/config-server-repository: not authorized
-2023-03-21 11:18:24 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
-2023-03-21 11:18:24 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2023-03-21 11:18:24 [main] ERROR o.s.boot.SpringApplication - Application run failed
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'defaultEnvironmentRepository' defined in class path resource [org/springframework/cloud/config/server/config/DefaultRepositoryConfiguration.class]: Invocation of init method failed; nested exception is org.eclipse.jgit.api.errors.TransportException: https://github.com/tronglv92/config-server-repository: not authorized
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
-	at com.microservices.demo.config.server.ConfigServer.main(ConfigServer.java:11)
-Caused by: org.eclipse.jgit.api.errors.TransportException: https://github.com/tronglv92/config-server-repository: not authorized
-	at org.eclipse.jgit.api.FetchCommand.call(FetchCommand.java:224)
-	at org.eclipse.jgit.api.CloneCommand.fetch(CloneCommand.java:311)
-	at org.eclipse.jgit.api.CloneCommand.call(CloneCommand.java:182)
-	at org.springframework.cloud.config.server.environment.JGitEnvironmentRepository.cloneToBasedir(JGitEnvironmentRepository.java:651)
-	at org.springframework.cloud.config.server.environment.JGitEnvironmentRepository.initClonedRepository(JGitEnvironmentRepository.java:356)
-	at org.springframework.cloud.config.server.environment.JGitEnvironmentRepository.afterPropertiesSet(JGitEnvironmentRepository.java:277)
-	at org.springframework.cloud.config.server.environment.MultipleJGitEnvironmentRepository.afterPropertiesSet(MultipleJGitEnvironmentRepository.java:66)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
-	... 16 common frames omitted
-Caused by: org.eclipse.jgit.errors.TransportException: https://github.com/tronglv92/config-server-repository: not authorized
-	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:685)
-	at org.eclipse.jgit.transport.TransportHttp.openFetch(TransportHttp.java:465)
-	at org.eclipse.jgit.transport.FetchProcess.executeImp(FetchProcess.java:142)
-	at org.eclipse.jgit.transport.FetchProcess.execute(FetchProcess.java:94)
-	at org.eclipse.jgit.transport.Transport.fetch(Transport.java:1309)
-	at org.eclipse.jgit.api.FetchCommand.call(FetchCommand.java:213)
-	... 24 common frames omitted
-2023-03-21 11:20:55 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
-2023-03-21 11:20:55 [main] INFO  c.m.demo.config.server.ConfigServer - Starting ConfigServer using Java 17.0.6 on MacBook-Pro-cua-luong.local with PID 9714 (/Users/luongvantrong/backend/microservice/java/microservices-demo/microservices-demo/config-server/target/classes started by luongvantrong in /Users/luongvantrong/backend/microservice/java/microservices-demo/microservices-demo)
-2023-03-21 11:20:55 [main] INFO  c.m.demo.config.server.ConfigServer - No active profile set, falling back to 1 default profile: "default"
-2023-03-21 11:20:55 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=5661a031-9c92-3b67-a98a-91252b007904
-2023-03-21 11:20:55 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
-2023-03-21 11:20:55 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
-2023-03-21 11:20:55 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2023-03-21 11:20:55 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
-2023-03-21 11:20:55 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2023-03-21 11:20:55 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 585 ms
-2023-03-21 11:20:56 [main] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/actuator/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
-2023-03-21 11:20:56 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/actuator/**']
-2023-03-21 11:20:56 [main] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/encrypt/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
-2023-03-21 11:20:56 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/encrypt/**']
-2023-03-21 11:20:56 [main] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/decrypt/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
-2023-03-21 11:20:56 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/decrypt/**']
-2023-03-21 11:20:56 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@ab2e6d2, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@71664560, org.springframework.security.web.context.SecurityContextPersistenceFilter@1b57c345, org.springframework.security.web.header.HeaderWriterFilter@8e25d3f, org.springframework.security.web.csrf.CsrfFilter@16f0ec18, org.springframework.security.web.authentication.logout.LogoutFilter@515b9d4a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7fe07361, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@5fdfe8cf, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@4d4436d0, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@30c19bff, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@902fdbe, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2f79f192, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@39da5e49, org.springframework.security.web.session.SessionManagementFilter@79b18230, org.springframework.security.web.access.ExceptionTranslationFilter@3fcbc766, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2e7af36e]
-2023-03-21 11:20:58 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
-2023-03-21 11:20:58 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
-2023-03-21 11:20:58 [main] INFO  c.m.demo.config.server.ConfigServer - Started ConfigServer in 4.225 seconds (JVM running for 4.558)
-2023-03-21 11:21:47 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-03-21 11:21:47 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2023-03-21 11:21:47 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
-2023-03-21 11:21:49 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-6437700491671044778/config-client-elastic_query_web.yml]' via location 'file:/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-6437700491671044778/'
-2023-03-21 11:21:49 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-6437700491671044778/config-client.yml]' via location 'file:/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-6437700491671044778/'
-2023-03-21 11:22:07 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-6437700491671044778/config-client-elastic_query_web.yml]' via location 'file:/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-6437700491671044778/'
-2023-03-21 11:22:07 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-6437700491671044778/config-client.yml]' via location 'file:/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-6437700491671044778/'
-2023-03-21 11:25:18 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-6437700491671044778/config-client-elastic_query_web.yml]' via location 'file:/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-6437700491671044778/'
-2023-03-21 11:25:18 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-6437700491671044778/config-client.yml]' via location 'file:/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-6437700491671044778/'
-2023-03-21 11:26:30 [http-nio-8888-exec-7] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-6437700491671044778/config-client-elastic_query_web.yml]' via location 'file:/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-6437700491671044778/'
-2023-03-21 11:26:30 [http-nio-8888-exec-7] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-6437700491671044778/config-client.yml]' via location 'file:/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-6437700491671044778/'
-2023-03-21 11:27:15 [http-nio-8888-exec-9] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-6437700491671044778/config-client-elastic_query_web.yml]' via location 'file:/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-6437700491671044778/'
-2023-03-21 11:27:15 [http-nio-8888-exec-9] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-6437700491671044778/config-client.yml]' via location 'file:/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-6437700491671044778/'
-2023-03-21 11:29:50 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-6437700491671044778/config-client-kafka_to_elastic.yml]' via location 'file:/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-6437700491671044778/'
-2023-03-21 11:29:50 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-6437700491671044778/config-client.yml]' via location 'file:/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-6437700491671044778/'
-2023-03-21 11:32:07 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-6437700491671044778/config-client-elastic_query.yml]' via location 'file:/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-6437700491671044778/'
-2023-03-21 11:32:07 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-6437700491671044778/config-client.yml]' via location 'file:/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-6437700491671044778/'
-2023-03-21 13:41:42 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
-2023-03-21 13:41:42 [main] INFO  c.m.demo.config.server.ConfigServer - Starting ConfigServer using Java 17.0.6 on MacBook-Pro-cua-luong.local with PID 12856 (/Users/luongvantrong/backend/microservice/java/microservices-demo/microservices-demo/config-server/target/classes started by luongvantrong in /Users/luongvantrong/backend/microservice/java/microservices-demo/microservices-demo)
-2023-03-21 13:41:42 [main] INFO  c.m.demo.config.server.ConfigServer - No active profile set, falling back to 1 default profile: "default"
-2023-03-21 13:41:42 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=5661a031-9c92-3b67-a98a-91252b007904
-2023-03-21 13:41:42 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
-2023-03-21 13:41:42 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
-2023-03-21 13:41:42 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2023-03-21 13:41:42 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
-2023-03-21 13:41:42 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2023-03-21 13:41:42 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 577 ms
-2023-03-21 13:41:43 [main] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/actuator/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
-2023-03-21 13:41:43 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/actuator/**']
-2023-03-21 13:41:43 [main] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/encrypt/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
-2023-03-21 13:41:43 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/encrypt/**']
-2023-03-21 13:41:43 [main] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/decrypt/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
-2023-03-21 13:41:43 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/decrypt/**']
-2023-03-21 13:41:43 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4d4436d0, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@39da5e49, org.springframework.security.web.context.SecurityContextPersistenceFilter@902fdbe, org.springframework.security.web.header.HeaderWriterFilter@79b18230, org.springframework.security.web.csrf.CsrfFilter@661d6bb6, org.springframework.security.web.authentication.logout.LogoutFilter@32a4ecbe, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4ef4f627, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@4e8b357d, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@2443abd6, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@ab2e6d2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5c059a68, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2a8b33ba, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@674da77b, org.springframework.security.web.session.SessionManagementFilter@7dee835, org.springframework.security.web.access.ExceptionTranslationFilter@8e25d3f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@740fefc6]
-2023-03-21 13:41:45 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
-2023-03-21 13:41:45 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
-2023-03-21 13:41:45 [main] INFO  c.m.demo.config.server.ConfigServer - Started ConfigServer in 4.015 seconds (JVM running for 4.444)
-2023-03-21 14:23:50 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
-2023-03-21 14:23:50 [main] INFO  c.m.demo.config.server.ConfigServer - Starting ConfigServer using Java 17.0.6 on MacBook-Pro-cua-luong.local with PID 14143 (/Users/luongvantrong/backend/microservice/java/microservices-demo/microservices-demo/config-server/target/classes started by luongvantrong in /Users/luongvantrong/backend/microservice/java/microservices-demo/microservices-demo)
-2023-03-21 14:23:50 [main] INFO  c.m.demo.config.server.ConfigServer - No active profile set, falling back to 1 default profile: "default"
-2023-03-21 14:23:51 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=5661a031-9c92-3b67-a98a-91252b007904
-2023-03-21 14:23:51 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
-2023-03-21 14:23:51 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
-2023-03-21 14:23:51 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2023-03-21 14:23:51 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
-2023-03-21 14:23:51 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2023-03-21 14:23:51 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 609 ms
-2023-03-21 14:23:51 [main] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/actuator/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
-2023-03-21 14:23:51 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/actuator/**']
-2023-03-21 14:23:51 [main] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/encrypt/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
-2023-03-21 14:23:51 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/encrypt/**']
-2023-03-21 14:23:51 [main] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/decrypt/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
-2023-03-21 14:23:51 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/decrypt/**']
-2023-03-21 14:23:51 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5348d83c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@477021ee, org.springframework.security.web.context.SecurityContextPersistenceFilter@2a8b33ba, org.springframework.security.web.header.HeaderWriterFilter@5c059a68, org.springframework.security.web.csrf.CsrfFilter@12417468, org.springframework.security.web.authentication.logout.LogoutFilter@5df7e31b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@59845579, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@6d6f6860, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@2180e789, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@6010d0d1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2e1eb85f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2401856, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5e9bbd9d, org.springframework.security.web.session.SessionManagementFilter@3f9b7fe1, org.springframework.security.web.access.ExceptionTranslationFilter@902fdbe, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@32227215]
-2023-03-21 14:23:53 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
-2023-03-21 14:23:53 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
-2023-03-21 14:23:53 [main] INFO  c.m.demo.config.server.ConfigServer - Started ConfigServer in 4.047 seconds (JVM running for 4.469)
+2023-03-22 14:36:13 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2023-03-22 14:36:13 [main] INFO  c.m.demo.config.server.ConfigServer - Starting ConfigServer using Java 17.0.6 on MacBook-Pro-cua-luong.local with PID 22007 (/Users/luongvantrong/backend/microservice/java/microservices-demo/microservices-demo/config-server/target/classes started by luongvantrong in /Users/luongvantrong/backend/microservice/java/microservices-demo/microservices-demo)
+2023-03-22 14:36:13 [main] INFO  c.m.demo.config.server.ConfigServer - No active profile set, falling back to 1 default profile: "default"
+2023-03-22 14:36:14 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=5661a031-9c92-3b67-a98a-91252b007904
+2023-03-22 14:36:14 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2023-03-22 14:36:14 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2023-03-22 14:36:14 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-03-22 14:36:14 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-03-22 14:36:14 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-03-22 14:36:14 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 653 ms
+2023-03-22 14:36:14 [main] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/actuator/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-03-22 14:36:14 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/actuator/**']
+2023-03-22 14:36:14 [main] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/encrypt/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-03-22 14:36:14 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/encrypt/**']
+2023-03-22 14:36:14 [main] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/decrypt/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-03-22 14:36:14 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/decrypt/**']
+2023-03-22 14:36:14 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@71664560, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4d4436d0, org.springframework.security.web.context.SecurityContextPersistenceFilter@6e02721d, org.springframework.security.web.header.HeaderWriterFilter@18a096b5, org.springframework.security.web.csrf.CsrfFilter@6c977dcf, org.springframework.security.web.authentication.logout.LogoutFilter@39b626e5, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@741ac284, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@2a8b33ba, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@39da5e49, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4e375bba, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@796d33eb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5fdfe8cf, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2443abd6, org.springframework.security.web.session.SessionManagementFilter@1d4f5506, org.springframework.security.web.access.ExceptionTranslationFilter@28cd2c2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1283ca23]
+2023-03-22 14:36:17 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2023-03-22 14:36:17 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2023-03-22 14:36:17 [main] INFO  c.m.demo.config.server.ConfigServer - Started ConfigServer in 4.289 seconds (JVM running for 4.744)
+2023-03-22 14:36:44 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-22 14:36:44 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-03-22 14:36:44 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2023-03-22 14:36:46 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-17565040285715683937/config-client-elastic_query.yml]' via location 'file:/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-17565040285715683937/'
+2023-03-22 14:36:46 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-17565040285715683937/config-client.yml]' via location 'file:/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-17565040285715683937/'
+2023-03-22 14:37:17 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-17565040285715683937/config-client-elastic_query.yml]' via location 'file:/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-17565040285715683937/'
+2023-03-22 14:37:17 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-17565040285715683937/config-client.yml]' via location 'file:/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-17565040285715683937/'
+2023-03-22 14:42:12 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-17565040285715683937/config-client-elastic_query.yml]' via location 'file:/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-17565040285715683937/'
+2023-03-22 14:42:12 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-17565040285715683937/config-client.yml]' via location 'file:/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-17565040285715683937/'
+2023-03-22 14:46:11 [http-nio-8888-exec-7] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-17565040285715683937/config-client-elastic_query.yml]' via location 'file:/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-17565040285715683937/'
+2023-03-22 14:46:11 [http-nio-8888-exec-7] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-17565040285715683937/config-client.yml]' via location 'file:/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-17565040285715683937/'
+2023-03-22 15:01:08 [http-nio-8888-exec-9] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-17565040285715683937/config-client-reactive_elastic_query.yml]' via location 'file:/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-17565040285715683937/'
+2023-03-22 15:01:08 [http-nio-8888-exec-9] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-17565040285715683937/config-client.yml]' via location 'file:/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-17565040285715683937/'
+2023-03-22 15:02:43 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-17565040285715683937/config-client-reactive_elastic_query.yml]' via location 'file:/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-17565040285715683937/'
+2023-03-22 15:02:43 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-17565040285715683937/config-client.yml]' via location 'file:/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-17565040285715683937/'
+2023-03-22 15:07:31 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-17565040285715683937/config-client-elastic_query.yml]' via location 'file:/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-17565040285715683937/'
+2023-03-22 15:07:31 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-17565040285715683937/config-client.yml]' via location 'file:/var/folders/4z/qmvjh94n4cq6lr5bqr8l9yy00000gn/T/config-repo-17565040285715683937/'
