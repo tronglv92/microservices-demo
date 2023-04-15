@@ -1,0 +1,29 @@
+2023-04-09 10:16:45 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2023-04-09 10:16:46 [main] INFO  c.m.d.e.q.s.ElasticQueryServiceApplication - Starting ElasticQueryServiceApplication v1.0-SNAPSHOT using Java 17.0.6 on 29d7f9aa4f9e with PID 1418 (/workspace/BOOT-INF/classes started by root in /workspace)
+2023-04-09 10:16:46 [main] INFO  c.m.d.e.q.s.ElasticQueryServiceApplication - The following 1 profile is active: "elastic_query"
+2023-04-09 10:16:54 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://config-server:8888
+2023-04-09 10:16:54 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=elastic-query-service,config-client, profiles=[elastic_query], label=null, version=ed6af9c0082c651f9257db677abddd4c3c920f88, state=null
+2023-04-09 10:17:54 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-09 10:17:54 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-04-09 10:17:57 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.microservices.demo.elastic.query.service.dataaccess.repository.UserPermissionRepository; If you want this repository to be a Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ElasticsearchRepository, org.springframework.data.elasticsearch.repository.ElasticsearchRepository
+2023-04-09 10:18:09 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14782 ms. Found 1 Elasticsearch repository interfaces.
+2023-04-09 10:18:34 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-09 10:18:34 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-04-09 10:18:35 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface com.microservices.demo.elastic.query.service.dataaccess.repository.UserPermissionRepository; If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository
+2023-04-09 10:18:35 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 436 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-04-09 10:18:35 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-09 10:18:35 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-09 10:18:36 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 647 ms. Found 1 JPA repository interfaces.
+2023-04-09 10:18:57 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=fa7a62e0-059b-3c7d-9c37-76554f848baa
+2023-04-09 10:19:27 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8183 (http)
+2023-04-09 10:19:28 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8183"]
+2023-04-09 10:19:28 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-04-09 10:19:28 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-04-09 10:19:32 [main] INFO  o.a.c.c.C.[.[.[/elastic-query-service] - Initializing Spring embedded WebApplicationContext
+2023-04-09 10:19:32 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 158154 ms
+2023-04-09 10:19:44 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-04-09 10:19:51 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-04-09 10:19:55 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-09 10:19:58 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.12.Final
+2023-04-09 10:20:08 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-09 10:20:14 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect

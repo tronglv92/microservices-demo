@@ -22,6 +22,12 @@ import java.util.List;
 import java.util.concurrent.ExecutionException;
 import java.util.stream.Collectors;
 
+// The administrative client for Kafka, which support managing and inspecting topic , brokers, configuration and ACLs.
+// You will create Kafka topics in this module and also will check if the topics are created and schema server is running prior to running microservices.
+// This will be required because when you run all components in a single Docker compose file.
+// If Kafka or schema registry or any other dependencies are not running, your application will fail at startup and will not continue to work as expected.
+// So to make your services more resilient, you will need to add some checks prior to running services. And in this module, you will implement these checks.
+
 @Component
 public class KafkaAdminClient {
     private static final Logger LOG= LoggerFactory.getLogger(KafkaAdminClient.class);

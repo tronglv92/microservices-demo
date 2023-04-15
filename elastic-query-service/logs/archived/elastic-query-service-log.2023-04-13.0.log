@@ -1,0 +1,529 @@
+2023-04-13 11:11:23 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2023-04-13 11:11:23 [main] INFO  c.m.d.e.q.s.ElasticQueryServiceApplication - Starting ElasticQueryServiceApplication using Java 17.0.6 on MacBook-Pro-cua-luong.local with PID 30021 (/Users/luongvantrong/backend/microservice/java/microservices-demo/microservices-demo/elastic-query-service/target/classes started by luongvantrong in /Users/luongvantrong/backend/microservice/java/microservices-demo/microservices-demo)
+2023-04-13 11:11:23 [main] INFO  c.m.d.e.q.s.ElasticQueryServiceApplication - The following 1 profile is active: "elastic_query"
+2023-04-13 11:11:23 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2023-04-13 11:11:23 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=elastic-query-service,config-client, profiles=[elastic_query], label=null, version=31a416cbf3ff6ee1d82122b0c85cd373bd1ee463, state=null
+2023-04-13 11:11:24 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-13 11:11:24 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-04-13 11:11:24 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.microservices.demo.elastic.query.service.dataaccess.repository.UserPermissionRepository; If you want this repository to be a Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ElasticsearchRepository, org.springframework.data.elasticsearch.repository.ElasticsearchRepository
+2023-04-13 11:11:24 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 77 ms. Found 1 Elasticsearch repository interfaces.
+2023-04-13 11:11:24 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-13 11:11:24 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-04-13 11:11:24 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface com.microservices.demo.elastic.query.service.dataaccess.repository.UserPermissionRepository; If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository
+2023-04-13 11:11:24 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-04-13 11:11:24 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-13 11:11:24 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-13 11:11:24 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 1 JPA repository interfaces.
+2023-04-13 11:11:24 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=bd1ddbdc-b68f-3722-a02c-37f8371b8324
+2023-04-13 11:11:24 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8183 (http)
+2023-04-13 11:11:24 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8183"]
+2023-04-13 11:11:24 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-04-13 11:11:24 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-04-13 11:11:25 [main] INFO  o.a.c.c.C.[.[.[/elastic-query-service] - Initializing Spring embedded WebApplicationContext
+2023-04-13 11:11:25 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1197 ms
+2023-04-13 11:11:25 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-04-13 11:11:25 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-04-13 11:11:25 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-13 11:11:25 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.12.Final
+2023-04-13 11:11:25 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-13 11:11:25 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2023-04-13 11:11:25 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-13 11:11:25 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-13 11:11:26 [I/O dispatcher 1] WARN  org.elasticsearch.client.RestClient - request [GET http://localhost:9200/] returned 1 warnings: [299 Elasticsearch-7.17.4-79878662c54c886ae89206c685d9f1051a9d6411 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.17/security-minimal-setup.html to enable security."]
+2023-04-13 11:11:26 [main] WARN  org.elasticsearch.client.RestClient - request [HEAD http://localhost:9200/twitter-index] returned 1 warnings: [299 Elasticsearch-7.17.4-79878662c54c886ae89206c685d9f1051a9d6411 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.17/security-minimal-setup.html to enable security."]
+2023-04-13 11:11:26 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'elasticDocumentController' defined in file [/Users/luongvantrong/backend/microservice/java/microservices-demo/microservices-demo/elastic-query-service/target/classes/com/microservices/demo/elastic/query/service/api/ElasticDocumentController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterElasticQueryService' defined in file [/Users/luongvantrong/backend/microservice/java/microservices-demo/microservices-demo/elastic-query-service/target/classes/com/microservices/demo/elastic/query/service/business/impl/TwitterElasticQueryService.class]: Unsatisfied dependency expressed through constructor parameter 3; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webClientConfig' defined in file [/Users/luongvantrong/backend/microservice/java/microservices-demo/microservices-demo/elastic-query-service/target/classes/com/microservices/demo/elastic/query/service/config/WebClientConfig.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.microservices.demo.config.ElasticQueryServiceConfigData$WebClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2023-04-13 11:11:26 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-13 11:11:26 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-04-13 11:11:26 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-04-13 11:11:26 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-04-13 11:11:26 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-04-13 11:11:26 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.microservices.demo.elastic.query.service.config.WebClientConfig required a bean of type 'com.microservices.demo.config.ElasticQueryServiceConfigData$WebClient' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.microservices.demo.config.ElasticQueryServiceConfigData$WebClient' in your configuration.
+
+2023-04-13 11:23:21 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2023-04-13 11:23:21 [main] INFO  c.m.d.e.q.s.ElasticQueryServiceApplication - Starting ElasticQueryServiceApplication using Java 17.0.6 on MacBook-Pro-cua-luong.local with PID 30688 (/Users/luongvantrong/backend/microservice/java/microservices-demo/microservices-demo/elastic-query-service/target/classes started by luongvantrong in /Users/luongvantrong/backend/microservice/java/microservices-demo/microservices-demo)
+2023-04-13 11:23:21 [main] INFO  c.m.d.e.q.s.ElasticQueryServiceApplication - The following 1 profile is active: "elastic_query"
+2023-04-13 11:23:21 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2023-04-13 11:23:21 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=elastic-query-service,config-client, profiles=[elastic_query], label=null, version=2dc25ac8cb6308fd11b25b02fc7f28414ec6f497, state=null
+2023-04-13 11:23:22 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-13 11:23:22 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-04-13 11:23:22 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.microservices.demo.elastic.query.service.dataaccess.repository.UserPermissionRepository; If you want this repository to be a Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ElasticsearchRepository, org.springframework.data.elasticsearch.repository.ElasticsearchRepository
+2023-04-13 11:23:22 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 76 ms. Found 1 Elasticsearch repository interfaces.
+2023-04-13 11:23:22 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-13 11:23:22 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-04-13 11:23:22 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface com.microservices.demo.elastic.query.service.dataaccess.repository.UserPermissionRepository; If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository
+2023-04-13 11:23:22 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-04-13 11:23:22 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-13 11:23:22 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-13 11:23:22 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interfaces.
+2023-04-13 11:23:22 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=bd1ddbdc-b68f-3722-a02c-37f8371b8324
+2023-04-13 11:23:22 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8183 (http)
+2023-04-13 11:23:22 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8183"]
+2023-04-13 11:23:22 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-04-13 11:23:22 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-04-13 11:23:22 [main] INFO  o.a.c.c.C.[.[.[/elastic-query-service] - Initializing Spring embedded WebApplicationContext
+2023-04-13 11:23:22 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 943 ms
+2023-04-13 11:23:22 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-04-13 11:23:23 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-04-13 11:23:23 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-13 11:23:23 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.12.Final
+2023-04-13 11:23:23 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-13 11:23:23 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2023-04-13 11:23:23 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-13 11:23:23 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-13 11:23:23 [I/O dispatcher 1] WARN  org.elasticsearch.client.RestClient - request [GET http://localhost:9200/] returned 1 warnings: [299 Elasticsearch-7.17.4-79878662c54c886ae89206c685d9f1051a9d6411 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.17/security-minimal-setup.html to enable security."]
+2023-04-13 11:23:23 [main] WARN  org.elasticsearch.client.RestClient - request [HEAD http://localhost:9200/twitter-index] returned 1 warnings: [299 Elasticsearch-7.17.4-79878662c54c886ae89206c685d9f1051a9d6411 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.17/security-minimal-setup.html to enable security."]
+2023-04-13 11:23:23 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'elasticDocumentController' defined in file [/Users/luongvantrong/backend/microservice/java/microservices-demo/microservices-demo/elastic-query-service/target/classes/com/microservices/demo/elastic/query/service/api/ElasticDocumentController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterElasticQueryService' defined in file [/Users/luongvantrong/backend/microservice/java/microservices-demo/microservices-demo/elastic-query-service/target/classes/com/microservices/demo/elastic/query/service/business/impl/TwitterElasticQueryService.class]: Unsatisfied dependency expressed through constructor parameter 3; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webClientConfig' defined in file [/Users/luongvantrong/backend/microservice/java/microservices-demo/microservices-demo/elastic-query-service/target/classes/com/microservices/demo/elastic/query/service/config/WebClientConfig.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.microservices.demo.config.ElasticQueryServiceConfigData$WebClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2023-04-13 11:23:23 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-13 11:23:23 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-04-13 11:23:23 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-04-13 11:23:23 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-04-13 11:23:23 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-04-13 11:23:23 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.microservices.demo.elastic.query.service.config.WebClientConfig required a bean of type 'com.microservices.demo.config.ElasticQueryServiceConfigData$WebClient' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.microservices.demo.config.ElasticQueryServiceConfigData$WebClient' in your configuration.
+
+2023-04-13 11:25:53 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2023-04-13 11:25:53 [main] INFO  c.m.d.e.q.s.ElasticQueryServiceApplication - Starting ElasticQueryServiceApplication using Java 17.0.6 on MacBook-Pro-cua-luong.local with PID 30771 (/Users/luongvantrong/backend/microservice/java/microservices-demo/microservices-demo/elastic-query-service/target/classes started by luongvantrong in /Users/luongvantrong/backend/microservice/java/microservices-demo/microservices-demo)
+2023-04-13 11:25:53 [main] INFO  c.m.d.e.q.s.ElasticQueryServiceApplication - The following 1 profile is active: "elastic_query"
+2023-04-13 11:25:53 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2023-04-13 11:25:53 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=elastic-query-service,config-client, profiles=[elastic_query], label=null, version=2dc25ac8cb6308fd11b25b02fc7f28414ec6f497, state=null
+2023-04-13 11:25:54 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-13 11:25:54 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-04-13 11:25:54 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.microservices.demo.elastic.query.service.dataaccess.repository.UserPermissionRepository; If you want this repository to be a Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ElasticsearchRepository, org.springframework.data.elasticsearch.repository.ElasticsearchRepository
+2023-04-13 11:25:54 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 72 ms. Found 1 Elasticsearch repository interfaces.
+2023-04-13 11:25:54 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-13 11:25:54 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-04-13 11:25:54 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface com.microservices.demo.elastic.query.service.dataaccess.repository.UserPermissionRepository; If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository
+2023-04-13 11:25:54 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-04-13 11:25:54 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-13 11:25:54 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-13 11:25:54 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 1 JPA repository interfaces.
+2023-04-13 11:25:54 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=bd1ddbdc-b68f-3722-a02c-37f8371b8324
+2023-04-13 11:25:54 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8183 (http)
+2023-04-13 11:25:54 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8183"]
+2023-04-13 11:25:54 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-04-13 11:25:54 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-04-13 11:25:54 [main] INFO  o.a.c.c.C.[.[.[/elastic-query-service] - Initializing Spring embedded WebApplicationContext
+2023-04-13 11:25:54 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1010 ms
+2023-04-13 11:25:54 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-04-13 11:25:54 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-04-13 11:25:55 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-13 11:25:55 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.12.Final
+2023-04-13 11:25:55 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-13 11:25:55 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2023-04-13 11:25:55 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-13 11:25:55 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-13 11:25:56 [I/O dispatcher 1] WARN  org.elasticsearch.client.RestClient - request [GET http://localhost:9200/] returned 1 warnings: [299 Elasticsearch-7.17.4-79878662c54c886ae89206c685d9f1051a9d6411 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.17/security-minimal-setup.html to enable security."]
+2023-04-13 11:25:56 [main] WARN  org.elasticsearch.client.RestClient - request [HEAD http://localhost:9200/twitter-index] returned 1 warnings: [299 Elasticsearch-7.17.4-79878662c54c886ae89206c685d9f1051a9d6411 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.17/security-minimal-setup.html to enable security."]
+2023-04-13 11:25:56 [main] ERROR i.n.r.d.DnsServerAddressStreamProviders - Unable to load io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+java.lang.reflect.InvocationTargetException: null
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at io.netty.resolver.dns.DnsServerAddressStreamProviders.<clinit>(DnsServerAddressStreamProviders.java:64)
+	at io.netty.resolver.dns.DnsNameResolverBuilder.<init>(DnsNameResolverBuilder.java:60)
+	at reactor.netty.transport.NameResolverProvider.newNameResolverGroup(NameResolverProvider.java:479)
+	at reactor.netty.transport.ClientTransportConfig.lambda$getOrCreateResolver$0(ClientTransportConfig.java:240)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1708)
+	at reactor.netty.internal.util.MapUtils.computeIfAbsent(MapUtils.java:46)
+	at reactor.netty.transport.ClientTransportConfig.getOrCreateResolver(ClientTransportConfig.java:239)
+	at reactor.netty.transport.ClientTransport.runOn(ClientTransport.java:352)
+	at reactor.netty.http.client.HttpClientConnect.applyTcpClientConfig(HttpClientConnect.java:148)
+	at reactor.netty.http.client.HttpClient.from(HttpClient.java:478)
+	at com.microservices.demo.elastic.query.service.config.WebClientConfig.webClientBuilder(WebClientConfig.java:32)
+	at com.microservices.demo.elastic.query.service.config.WebClientConfig$$EnhancerBySpringCGLIB$$4b9d708e.CGLIB$webClientBuilder$0(<generated>)
+	at com.microservices.demo.elastic.query.service.config.WebClientConfig$$EnhancerBySpringCGLIB$$4b9d708e$$FastClassBySpringCGLIB$$7cd4b199.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at com.microservices.demo.elastic.query.service.config.WebClientConfig$$EnhancerBySpringCGLIB$$4b9d708e.webClientBuilder(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:486)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.microservices.demo.elastic.query.service.ElasticQueryServiceApplication.main(ElasticQueryServiceApplication.java:11)
+Caused by: java.lang.UnsatisfiedLinkError: failed to load the required native library
+	at io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider.ensureAvailability(MacOSDnsServerAddressStreamProvider.java:110)
+	at io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider.<init>(MacOSDnsServerAddressStreamProvider.java:120)
+	... 74 common frames omitted
+Caused by: java.lang.UnsatisfiedLinkError: could not load a native library: netty_resolver_dns_native_macos_aarch_64
+	at io.netty.util.internal.NativeLibraryLoader.load(NativeLibraryLoader.java:239)
+	at io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider.loadNativeLibrary(MacOSDnsServerAddressStreamProvider.java:92)
+	at io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider.<clinit>(MacOSDnsServerAddressStreamProvider.java:77)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at io.netty.resolver.dns.DnsServerAddressStreamProviders$1.run(DnsServerAddressStreamProviders.java:50)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:318)
+	at io.netty.resolver.dns.DnsServerAddressStreamProviders.<clinit>(DnsServerAddressStreamProviders.java:46)
+	... 68 common frames omitted
+	Suppressed: java.lang.UnsatisfiedLinkError: could not load a native library: netty_resolver_dns_native_macos
+		at io.netty.util.internal.NativeLibraryLoader.load(NativeLibraryLoader.java:239)
+		at io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider.loadNativeLibrary(MacOSDnsServerAddressStreamProvider.java:95)
+		... 74 common frames omitted
+	Caused by: java.io.FileNotFoundException: META-INF/native/libnetty_resolver_dns_native_macos.jnilib
+		at io.netty.util.internal.NativeLibraryLoader.load(NativeLibraryLoader.java:181)
+		... 75 common frames omitted
+		Suppressed: java.lang.UnsatisfiedLinkError: no netty_resolver_dns_native_macos in java.library.path: /Users/luongvantrong/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+			at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2429)
+			at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:818)
+			at java.base/java.lang.System.loadLibrary(System.java:1989)
+			at io.netty.util.internal.NativeLibraryUtil.loadLibrary(NativeLibraryUtil.java:38)
+			at io.netty.util.internal.NativeLibraryLoader.loadLibrary(NativeLibraryLoader.java:391)
+			at io.netty.util.internal.NativeLibraryLoader.load(NativeLibraryLoader.java:161)
+			... 75 common frames omitted
+			Suppressed: java.lang.UnsatisfiedLinkError: no netty_resolver_dns_native_macos in java.library.path: /Users/luongvantrong/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+				at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2429)
+				at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:818)
+				at java.base/java.lang.System.loadLibrary(System.java:1989)
+				at io.netty.util.internal.NativeLibraryUtil.loadLibrary(NativeLibraryUtil.java:38)
+				at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+				at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+				at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+				at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+				at io.netty.util.internal.NativeLibraryLoader$1.run(NativeLibraryLoader.java:425)
+				at java.base/java.security.AccessController.doPrivileged(AccessController.java:318)
+				at io.netty.util.internal.NativeLibraryLoader.loadLibraryByHelper(NativeLibraryLoader.java:417)
+				at io.netty.util.internal.NativeLibraryLoader.loadLibrary(NativeLibraryLoader.java:383)
+				... 76 common frames omitted
+Caused by: java.io.FileNotFoundException: META-INF/native/libnetty_resolver_dns_native_macos_aarch_64.jnilib
+	at io.netty.util.internal.NativeLibraryLoader.load(NativeLibraryLoader.java:181)
+	... 75 common frames omitted
+	Suppressed: java.lang.UnsatisfiedLinkError: no netty_resolver_dns_native_macos_aarch_64 in java.library.path: /Users/luongvantrong/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+		at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2429)
+		at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:818)
+		at java.base/java.lang.System.loadLibrary(System.java:1989)
+		at io.netty.util.internal.NativeLibraryUtil.loadLibrary(NativeLibraryUtil.java:38)
+		at io.netty.util.internal.NativeLibraryLoader.loadLibrary(NativeLibraryLoader.java:391)
+		at io.netty.util.internal.NativeLibraryLoader.load(NativeLibraryLoader.java:161)
+		... 75 common frames omitted
+		Suppressed: java.lang.UnsatisfiedLinkError: no netty_resolver_dns_native_macos_aarch_64 in java.library.path: /Users/luongvantrong/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+			at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2429)
+			at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:818)
+			at java.base/java.lang.System.loadLibrary(System.java:1989)
+			at io.netty.util.internal.NativeLibraryUtil.loadLibrary(NativeLibraryUtil.java:38)
+			at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+			at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+			at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+			at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+			at io.netty.util.internal.NativeLibraryLoader$1.run(NativeLibraryLoader.java:425)
+			at java.base/java.security.AccessController.doPrivileged(AccessController.java:318)
+			at io.netty.util.internal.NativeLibraryLoader.loadLibraryByHelper(NativeLibraryLoader.java:417)
+			at io.netty.util.internal.NativeLibraryLoader.loadLibrary(NativeLibraryLoader.java:383)
+			... 76 common frames omitted
+2023-04-13 11:25:57 [main] INFO  c.m.d.e.q.s.config.WebSecurityConfig - jwtDecoder
+2023-04-13 11:25:58 [main] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/api-docs']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-04-13 11:25:58 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/api-docs']
+2023-04-13 11:25:59 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@71443983, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@105d2c27, org.springframework.security.web.context.SecurityContextPersistenceFilter@5d28ac23, org.springframework.security.web.header.HeaderWriterFilter@376b6d7d, org.springframework.security.web.authentication.logout.LogoutFilter@5935ade6, org.springframework.security.oauth2.server.resource.web.BearerTokenAuthenticationFilter@169f4152, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@28d48616, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5967492a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7ca46aaf, org.springframework.security.web.session.SessionManagementFilter@27828021, org.springframework.security.web.access.ExceptionTranslationFilter@33c5d3e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5ae3f536]
+2023-04-13 11:25:59 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8183"]
+2023-04-13 11:25:59 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8183 (http) with context path '/elastic-query-service'
+2023-04-13 11:25:59 [main] INFO  c.m.d.e.q.s.ElasticQueryServiceApplication - Started ElasticQueryServiceApplication in 7.659 seconds (JVM running for 8.105)
+2023-04-13 11:28:50 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-13 11:28:50 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-04-13 11:28:50 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-04-13 11:28:57 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2023-04-13 11:28:57 [main] INFO  c.m.d.e.q.s.ElasticQueryServiceApplication - Starting ElasticQueryServiceApplication using Java 17.0.6 on MacBook-Pro-cua-luong.local with PID 30889 (/Users/luongvantrong/backend/microservice/java/microservices-demo/microservices-demo/elastic-query-service/target/classes started by luongvantrong in /Users/luongvantrong/backend/microservice/java/microservices-demo/microservices-demo)
+2023-04-13 11:28:57 [main] INFO  c.m.d.e.q.s.ElasticQueryServiceApplication - The following 1 profile is active: "elastic_query"
+2023-04-13 11:28:57 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2023-04-13 11:28:57 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=elastic-query-service,config-client, profiles=[elastic_query], label=null, version=2dc25ac8cb6308fd11b25b02fc7f28414ec6f497, state=null
+2023-04-13 11:28:57 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-13 11:28:57 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-04-13 11:28:57 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.microservices.demo.elastic.query.service.dataaccess.repository.UserPermissionRepository; If you want this repository to be a Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ElasticsearchRepository, org.springframework.data.elasticsearch.repository.ElasticsearchRepository
+2023-04-13 11:28:57 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 75 ms. Found 1 Elasticsearch repository interfaces.
+2023-04-13 11:28:57 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-13 11:28:57 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-04-13 11:28:57 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface com.microservices.demo.elastic.query.service.dataaccess.repository.UserPermissionRepository; If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository
+2023-04-13 11:28:57 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-04-13 11:28:57 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-13 11:28:57 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-13 11:28:57 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 1 JPA repository interfaces.
+2023-04-13 11:28:57 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=bd1ddbdc-b68f-3722-a02c-37f8371b8324
+2023-04-13 11:28:58 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8183 (http)
+2023-04-13 11:28:58 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8183"]
+2023-04-13 11:28:58 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-04-13 11:28:58 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-04-13 11:28:58 [main] INFO  o.a.c.c.C.[.[.[/elastic-query-service] - Initializing Spring embedded WebApplicationContext
+2023-04-13 11:28:58 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1053 ms
+2023-04-13 11:28:58 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-04-13 11:28:58 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-04-13 11:28:58 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-13 11:28:58 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.12.Final
+2023-04-13 11:28:58 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-13 11:28:58 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2023-04-13 11:28:58 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-13 11:28:58 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-13 11:28:59 [I/O dispatcher 1] WARN  org.elasticsearch.client.RestClient - request [GET http://localhost:9200/] returned 1 warnings: [299 Elasticsearch-7.17.4-79878662c54c886ae89206c685d9f1051a9d6411 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.17/security-minimal-setup.html to enable security."]
+2023-04-13 11:28:59 [main] WARN  org.elasticsearch.client.RestClient - request [HEAD http://localhost:9200/twitter-index] returned 1 warnings: [299 Elasticsearch-7.17.4-79878662c54c886ae89206c685d9f1051a9d6411 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.17/security-minimal-setup.html to enable security."]
+2023-04-13 11:28:59 [main] ERROR i.n.r.d.DnsServerAddressStreamProviders - Unable to load io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+java.lang.reflect.InvocationTargetException: null
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at io.netty.resolver.dns.DnsServerAddressStreamProviders.<clinit>(DnsServerAddressStreamProviders.java:64)
+	at io.netty.resolver.dns.DnsNameResolverBuilder.<init>(DnsNameResolverBuilder.java:60)
+	at reactor.netty.transport.NameResolverProvider.newNameResolverGroup(NameResolverProvider.java:479)
+	at reactor.netty.transport.ClientTransportConfig.lambda$getOrCreateResolver$0(ClientTransportConfig.java:240)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1708)
+	at reactor.netty.internal.util.MapUtils.computeIfAbsent(MapUtils.java:46)
+	at reactor.netty.transport.ClientTransportConfig.getOrCreateResolver(ClientTransportConfig.java:239)
+	at reactor.netty.transport.ClientTransport.runOn(ClientTransport.java:352)
+	at reactor.netty.http.client.HttpClientConnect.applyTcpClientConfig(HttpClientConnect.java:148)
+	at reactor.netty.http.client.HttpClient.from(HttpClient.java:478)
+	at com.microservices.demo.elastic.query.service.config.WebClientConfig.webClientBuilder(WebClientConfig.java:32)
+	at com.microservices.demo.elastic.query.service.config.WebClientConfig$$EnhancerBySpringCGLIB$$749877e.CGLIB$webClientBuilder$0(<generated>)
+	at com.microservices.demo.elastic.query.service.config.WebClientConfig$$EnhancerBySpringCGLIB$$749877e$$FastClassBySpringCGLIB$$12161e2f.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at com.microservices.demo.elastic.query.service.config.WebClientConfig$$EnhancerBySpringCGLIB$$749877e.webClientBuilder(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:486)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.microservices.demo.elastic.query.service.ElasticQueryServiceApplication.main(ElasticQueryServiceApplication.java:11)
+Caused by: java.lang.UnsatisfiedLinkError: failed to load the required native library
+	at io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider.ensureAvailability(MacOSDnsServerAddressStreamProvider.java:110)
+	at io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider.<init>(MacOSDnsServerAddressStreamProvider.java:120)
+	... 74 common frames omitted
+Caused by: java.lang.UnsatisfiedLinkError: could not load a native library: netty_resolver_dns_native_macos_aarch_64
+	at io.netty.util.internal.NativeLibraryLoader.load(NativeLibraryLoader.java:239)
+	at io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider.loadNativeLibrary(MacOSDnsServerAddressStreamProvider.java:92)
+	at io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider.<clinit>(MacOSDnsServerAddressStreamProvider.java:77)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at io.netty.resolver.dns.DnsServerAddressStreamProviders$1.run(DnsServerAddressStreamProviders.java:50)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:318)
+	at io.netty.resolver.dns.DnsServerAddressStreamProviders.<clinit>(DnsServerAddressStreamProviders.java:46)
+	... 68 common frames omitted
+	Suppressed: java.lang.UnsatisfiedLinkError: could not load a native library: netty_resolver_dns_native_macos
+		at io.netty.util.internal.NativeLibraryLoader.load(NativeLibraryLoader.java:239)
+		at io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider.loadNativeLibrary(MacOSDnsServerAddressStreamProvider.java:95)
+		... 74 common frames omitted
+	Caused by: java.io.FileNotFoundException: META-INF/native/libnetty_resolver_dns_native_macos.jnilib
+		at io.netty.util.internal.NativeLibraryLoader.load(NativeLibraryLoader.java:181)
+		... 75 common frames omitted
+		Suppressed: java.lang.UnsatisfiedLinkError: no netty_resolver_dns_native_macos in java.library.path: /Users/luongvantrong/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+			at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2429)
+			at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:818)
+			at java.base/java.lang.System.loadLibrary(System.java:1989)
+			at io.netty.util.internal.NativeLibraryUtil.loadLibrary(NativeLibraryUtil.java:38)
+			at io.netty.util.internal.NativeLibraryLoader.loadLibrary(NativeLibraryLoader.java:391)
+			at io.netty.util.internal.NativeLibraryLoader.load(NativeLibraryLoader.java:161)
+			... 75 common frames omitted
+			Suppressed: java.lang.UnsatisfiedLinkError: no netty_resolver_dns_native_macos in java.library.path: /Users/luongvantrong/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+				at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2429)
+				at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:818)
+				at java.base/java.lang.System.loadLibrary(System.java:1989)
+				at io.netty.util.internal.NativeLibraryUtil.loadLibrary(NativeLibraryUtil.java:38)
+				at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+				at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+				at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+				at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+				at io.netty.util.internal.NativeLibraryLoader$1.run(NativeLibraryLoader.java:425)
+				at java.base/java.security.AccessController.doPrivileged(AccessController.java:318)
+				at io.netty.util.internal.NativeLibraryLoader.loadLibraryByHelper(NativeLibraryLoader.java:417)
+				at io.netty.util.internal.NativeLibraryLoader.loadLibrary(NativeLibraryLoader.java:383)
+				... 76 common frames omitted
+Caused by: java.io.FileNotFoundException: META-INF/native/libnetty_resolver_dns_native_macos_aarch_64.jnilib
+	at io.netty.util.internal.NativeLibraryLoader.load(NativeLibraryLoader.java:181)
+	... 75 common frames omitted
+	Suppressed: java.lang.UnsatisfiedLinkError: no netty_resolver_dns_native_macos_aarch_64 in java.library.path: /Users/luongvantrong/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+		at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2429)
+		at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:818)
+		at java.base/java.lang.System.loadLibrary(System.java:1989)
+		at io.netty.util.internal.NativeLibraryUtil.loadLibrary(NativeLibraryUtil.java:38)
+		at io.netty.util.internal.NativeLibraryLoader.loadLibrary(NativeLibraryLoader.java:391)
+		at io.netty.util.internal.NativeLibraryLoader.load(NativeLibraryLoader.java:161)
+		... 75 common frames omitted
+		Suppressed: java.lang.UnsatisfiedLinkError: no netty_resolver_dns_native_macos_aarch_64 in java.library.path: /Users/luongvantrong/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+			at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2429)
+			at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:818)
+			at java.base/java.lang.System.loadLibrary(System.java:1989)
+			at io.netty.util.internal.NativeLibraryUtil.loadLibrary(NativeLibraryUtil.java:38)
+			at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+			at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+			at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+			at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+			at io.netty.util.internal.NativeLibraryLoader$1.run(NativeLibraryLoader.java:425)
+			at java.base/java.security.AccessController.doPrivileged(AccessController.java:318)
+			at io.netty.util.internal.NativeLibraryLoader.loadLibraryByHelper(NativeLibraryLoader.java:417)
+			at io.netty.util.internal.NativeLibraryLoader.loadLibrary(NativeLibraryLoader.java:383)
+			... 76 common frames omitted
+2023-04-13 11:28:59 [main] INFO  c.m.d.e.q.s.config.WebSecurityConfig - jwtDecoder
+2023-04-13 11:29:00 [main] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/api-docs']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-04-13 11:29:00 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/api-docs']
+2023-04-13 11:29:00 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@135fb22d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@461e0652, org.springframework.security.web.context.SecurityContextPersistenceFilter@f4a21cb, org.springframework.security.web.header.HeaderWriterFilter@6232cde5, org.springframework.security.web.authentication.logout.LogoutFilter@da8853c, org.springframework.security.oauth2.server.resource.web.BearerTokenAuthenticationFilter@6af6a3b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@456d3914, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6b989889, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3b9d5218, org.springframework.security.web.session.SessionManagementFilter@142f0ac1, org.springframework.security.web.access.ExceptionTranslationFilter@6abdead7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@574f89bf]
+2023-04-13 11:29:00 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8183"]
+2023-04-13 11:29:00 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8183 (http) with context path '/elastic-query-service'
+2023-04-13 11:29:00 [main] INFO  c.m.d.e.q.s.ElasticQueryServiceApplication - Started ElasticQueryServiceApplication in 6.078 seconds (JVM running for 6.548)
+2023-04-13 11:29:08 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-13 11:29:08 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-04-13 11:29:08 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-04-13 11:29:47 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2023-04-13 11:29:47 [main] INFO  c.m.d.e.q.s.ElasticQueryServiceApplication - Starting ElasticQueryServiceApplication using Java 17.0.6 on MacBook-Pro-cua-luong.local with PID 30924 (/Users/luongvantrong/backend/microservice/java/microservices-demo/microservices-demo/elastic-query-service/target/classes started by luongvantrong in /Users/luongvantrong/backend/microservice/java/microservices-demo/microservices-demo)
+2023-04-13 11:29:47 [main] INFO  c.m.d.e.q.s.ElasticQueryServiceApplication - The following 1 profile is active: "elastic_query"
+2023-04-13 11:29:47 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2023-04-13 11:29:47 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=elastic-query-service,config-client, profiles=[elastic_query], label=null, version=2dc25ac8cb6308fd11b25b02fc7f28414ec6f497, state=null
+2023-04-13 11:29:48 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-13 11:29:48 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-04-13 11:29:48 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.microservices.demo.elastic.query.service.dataaccess.repository.UserPermissionRepository; If you want this repository to be a Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ElasticsearchRepository, org.springframework.data.elasticsearch.repository.ElasticsearchRepository
+2023-04-13 11:29:48 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 78 ms. Found 1 Elasticsearch repository interfaces.
+2023-04-13 11:29:48 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-13 11:29:48 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-04-13 11:29:48 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface com.microservices.demo.elastic.query.service.dataaccess.repository.UserPermissionRepository; If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository
+2023-04-13 11:29:48 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-04-13 11:29:48 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-13 11:29:48 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-13 11:29:48 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 1 JPA repository interfaces.
+2023-04-13 11:29:48 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=bd1ddbdc-b68f-3722-a02c-37f8371b8324
+2023-04-13 11:29:48 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8183 (http)
+2023-04-13 11:29:48 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8183"]
+2023-04-13 11:29:48 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-04-13 11:29:48 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-04-13 11:29:48 [main] INFO  o.a.c.c.C.[.[.[/elastic-query-service] - Initializing Spring embedded WebApplicationContext
+2023-04-13 11:29:48 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1021 ms
+2023-04-13 11:29:48 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-04-13 11:29:48 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-04-13 11:29:49 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-13 11:29:49 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.12.Final
+2023-04-13 11:29:49 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-13 11:29:49 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2023-04-13 11:29:49 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-13 11:29:49 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-13 11:29:49 [I/O dispatcher 1] WARN  org.elasticsearch.client.RestClient - request [GET http://localhost:9200/] returned 1 warnings: [299 Elasticsearch-7.17.4-79878662c54c886ae89206c685d9f1051a9d6411 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.17/security-minimal-setup.html to enable security."]
+2023-04-13 11:29:49 [main] WARN  org.elasticsearch.client.RestClient - request [HEAD http://localhost:9200/twitter-index] returned 1 warnings: [299 Elasticsearch-7.17.4-79878662c54c886ae89206c685d9f1051a9d6411 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.17/security-minimal-setup.html to enable security."]
+2023-04-13 11:29:50 [main] INFO  c.m.d.e.q.s.config.WebSecurityConfig - jwtDecoder
+2023-04-13 11:29:52 [main] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/api-docs']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-04-13 11:29:52 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/api-docs']
+2023-04-13 11:29:52 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4ab8c3c0, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2978d342, org.springframework.security.web.context.SecurityContextPersistenceFilter@548d9d87, org.springframework.security.web.header.HeaderWriterFilter@6e863469, org.springframework.security.web.authentication.logout.LogoutFilter@3ec8c874, org.springframework.security.oauth2.server.resource.web.BearerTokenAuthenticationFilter@2aafd790, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@fb79241, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1e499f1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7dbf92aa, org.springframework.security.web.session.SessionManagementFilter@2f8ede54, org.springframework.security.web.access.ExceptionTranslationFilter@271df4c0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@41d34a11]
+2023-04-13 11:29:52 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8183"]
+2023-04-13 11:29:52 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8183 (http) with context path '/elastic-query-service'
+2023-04-13 11:29:52 [main] INFO  c.m.d.e.q.s.ElasticQueryServiceApplication - Started ElasticQueryServiceApplication in 7.333 seconds (JVM running for 7.827)
+2023-04-13 11:32:02 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-13 11:32:02 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-04-13 11:32:02 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

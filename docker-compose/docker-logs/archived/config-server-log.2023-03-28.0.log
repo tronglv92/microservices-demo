@@ -1,0 +1,23 @@
+2023-03-28 08:37:28 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2023-03-28 08:37:29 [main] INFO  c.m.demo.config.server.ConfigServer - Starting ConfigServer v1.0-SNAPSHOT using Java 17.0.6 on 6113c0f702e3 with PID 1 (/workspace/BOOT-INF/classes started by cnb in /workspace)
+2023-03-28 08:37:29 [main] INFO  c.m.demo.config.server.ConfigServer - No active profile set, falling back to 1 default profile: "default"
+2023-03-28 08:37:38 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=5661a031-9c92-3b67-a98a-91252b007904
+2023-03-28 08:37:40 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2023-03-28 08:37:40 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2023-03-28 08:37:40 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-03-28 08:37:40 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-03-28 08:37:41 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-03-28 08:37:41 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 10915 ms
+2023-03-28 08:37:44 [main] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/actuator/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-03-28 08:37:44 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/actuator/**']
+2023-03-28 08:37:44 [main] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/encrypt/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-03-28 08:37:44 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/encrypt/**']
+2023-03-28 08:37:44 [main] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/decrypt/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-03-28 08:37:44 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/decrypt/**']
+2023-03-28 08:37:45 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7455dacb, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7634f2b, org.springframework.security.web.context.SecurityContextPersistenceFilter@3bb9ca38, org.springframework.security.web.header.HeaderWriterFilter@50085d9c, org.springframework.security.web.csrf.CsrfFilter@31723307, org.springframework.security.web.authentication.logout.LogoutFilter@64ae105d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@51c65a43, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3cc053, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@1d15c0a1, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1c30cb85, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4f3e9fbb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7b53b1ad, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@15639d09, org.springframework.security.web.session.SessionManagementFilter@63a9c661, org.springframework.security.web.access.ExceptionTranslationFilter@3e900e1a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4c731956]
+2023-03-28 08:38:02 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2023-03-28 08:38:02 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2023-03-28 08:38:03 [main] INFO  c.m.demo.config.server.ConfigServer - Started ConfigServer in 59.848 seconds (JVM running for 85.909)
+2023-03-28 08:38:34 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-28 08:38:34 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-03-28 08:38:34 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 29 ms

@@ -7,7 +7,7 @@ yes | apt-get install curl
 
 curlResult=$(curl -s -o /dev/null -I -w "%{http_code}" http://config-server:8888/actuator/health)
 
-echo "result status code:" "$curlResult"
+echo "check-config-server-started result status code:" "$curlResult"
 
 while [[ ! $curlResult == "200" ]]; do
   >&2 echo "Config server is not up yet!"
@@ -15,4 +15,5 @@ while [[ ! $curlResult == "200" ]]; do
   curlResult=$(curl -s -o /dev/null -I -w "%{http_code}" http://config-server:8888/actuator/health)
 done
 
-/cnb/process/web
+check-keycloak-server-started.sh
+

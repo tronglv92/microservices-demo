@@ -1,0 +1,53 @@
+2023-04-07 16:09:13 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2023-04-07 16:09:13 [main] INFO  c.m.d.r.e.q.w.c.ReactiveElasticQueryWebClientApplication - Starting ReactiveElasticQueryWebClientApplication using Java 17.0.6 on MacBook-Pro-cua-luong.local with PID 13692 (/Users/luongvantrong/backend/microservice/java/microservices-demo/microservices-demo/reactive-elastic-query-web-client/target/classes started by luongvantrong in /Users/luongvantrong/backend/microservice/java/microservices-demo/microservices-demo)
+2023-04-07 16:09:13 [main] INFO  c.m.d.r.e.q.w.c.ReactiveElasticQueryWebClientApplication - The following 1 profile is active: "reactive_elastic_query_web"
+2023-04-07 16:09:13 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2023-04-07 16:09:13 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=reactive-elastic-query-web-client,config-client, profiles=[reactive_elastic_query_web], label=null, version=ed6af9c0082c651f9257db677abddd4c3c920f88, state=null
+2023-04-07 16:09:13 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=140ff402-32ab-36b2-8f2b-66cf6729bf66
+2023-04-07 16:09:13 [main] WARN  o.s.b.w.r.c.AnnotationConfigReactiveWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'queryController' defined in file [/Users/luongvantrong/backend/microservice/java/microservices-demo/microservices-demo/reactive-elastic-query-web-client/target/classes/com/microservices/demo/reactive/elastic/query/web/client/api/QueryController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.microservices.demo.reactive.elastic.query.web.client.service.ElasticQueryWebClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2023-04-07 16:09:13 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-04-07 16:09:13 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.microservices.demo.reactive.elastic.query.web.client.api.QueryController required a bean of type 'com.microservices.demo.reactive.elastic.query.web.client.service.ElasticQueryWebClient' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.microservices.demo.reactive.elastic.query.web.client.service.ElasticQueryWebClient' in your configuration.
+
+2023-04-07 16:12:15 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2023-04-07 16:12:15 [main] INFO  c.m.d.r.e.q.w.c.ReactiveElasticQueryWebClientApplication - Starting ReactiveElasticQueryWebClientApplication using Java 17.0.6 on MacBook-Pro-cua-luong.local with PID 13867 (/Users/luongvantrong/backend/microservice/java/microservices-demo/microservices-demo/reactive-elastic-query-web-client/target/classes started by luongvantrong in /Users/luongvantrong/backend/microservice/java/microservices-demo/microservices-demo)
+2023-04-07 16:12:15 [main] INFO  c.m.d.r.e.q.w.c.ReactiveElasticQueryWebClientApplication - The following 1 profile is active: "reactive_elastic_query_web"
+2023-04-07 16:12:15 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2023-04-07 16:12:15 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=reactive-elastic-query-web-client,config-client, profiles=[reactive_elastic_query_web], label=null, version=ed6af9c0082c651f9257db677abddd4c3c920f88, state=null
+2023-04-07 16:12:16 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=1f2f0bdd-81a9-314f-a8d0-f9e4d534a208
+2023-04-07 16:12:16 [main] INFO  o.s.b.a.s.r.ReactiveUserDetailsServiceAutoConfiguration - 
+
+Using generated security password: d3224125-5d5a-48d9-964c-ee4936012b3f
+
+2023-04-07 16:12:17 [main] WARN  o.s.b.w.r.c.AnnotationConfigReactiveWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8184 is already in use
+2023-04-07 16:12:19 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-04-07 16:12:19 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8184 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8184 or configure this application to listen on another port.
+

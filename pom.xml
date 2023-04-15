@@ -31,6 +31,8 @@
         <module>elastic-query-web-client-common</module>
         <module>reactive-elastic-query-service</module>
         <module>reactive-elastic-query-web-client</module>
+        <module>elastic-query-web-client-2</module>
+        <module>kafka-streams-service</module>
 
     </modules>
 
@@ -46,15 +48,20 @@
         <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
         <twitter4j.version>4.0.7</twitter4j.version>
         <lombok.version>1.18.22</lombok.version>
-        <avro.version>1.10.0</avro.version>
-        <kafka-avro-serializer.version>5.5.1</kafka-avro-serializer.version>
-        <spring-kafka.version>2.9.2</spring-kafka.version>
+        <avro.version>1.11.1</avro.version>
+
         <spring-retry.version>1.3.4</spring-retry.version>
         <spring-cloud.version>3.1.4</spring-cloud.version>
         <jasypt-spring-boot-starter.version>3.0.3</jasypt-spring-boot-starter.version>
         <elastic.version>7.17.4</elastic.version>
         <netty-resolver-dns-native-macos.version>4.1.73.Final</netty-resolver-dns-native-macos.version>
         <springdoc-openapi-ui.version>1.6.15</springdoc-openapi-ui.version>
+
+        <kafka-avro-serializer.version>7.3.0</kafka-avro-serializer.version>
+        <spring-kafka.version>2.9.2</spring-kafka.version>
+        <kafka-streams-avro-serde.version>7.3.0</kafka-streams-avro-serde.version>
+        <kafka-streams.version>3.3.1</kafka-streams.version>
+        <kafka-clients.version>3.3.1</kafka-clients.version>
     </properties>
     <repositories>
         <repository>
@@ -122,12 +129,12 @@
             </dependency>
             <dependency>
                 <groupId>com.microservices.demo</groupId>
-                <artifactId>kafka-consumer</artifactId>
+                <artifactId>app-config-data</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.microservices.demo</groupId>
-                <artifactId>app-config-data</artifactId>
+                <artifactId>kafka-consumer</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
@@ -150,6 +157,23 @@
                 <artifactId>kafka-producer</artifactId>
                 <version>${project.version}</version>
             </dependency>
+            <dependency>
+                <groupId>io.confluent</groupId>
+                <artifactId>kafka-streams-avro-serde</artifactId>
+                <version>${kafka-streams-avro-serde.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.kafka</groupId>
+                <artifactId>kafka-streams</artifactId>
+                <version>${kafka-streams.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.kafka</groupId>
+                <artifactId>kafka-clients</artifactId>
+                <version>${kafka-clients.version}</version>
+            </dependency>
+
             <dependency>
                 <groupId>org.springframework.retry</groupId>
                 <artifactId>spring-retry</artifactId>
@@ -267,6 +291,9 @@
                 <artifactId>spring-cloud-loadbalancer</artifactId>
                 <version>${spring-cloud.version}</version>
             </dependency>
+
+
+
         </dependencies>
     </dependencyManagement>
 

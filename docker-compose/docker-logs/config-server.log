@@ -1,27 +1,477 @@
-2023-03-22 07:22:46 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
-2023-03-22 07:22:46 [main] INFO  c.m.demo.config.server.ConfigServer - Starting ConfigServer v1.0-SNAPSHOT using Java 17.0.6 on da18741344bc with PID 1 (/workspace/BOOT-INF/classes started by cnb in /workspace)
-2023-03-22 07:22:46 [main] INFO  c.m.demo.config.server.ConfigServer - No active profile set, falling back to 1 default profile: "default"
-2023-03-22 07:22:55 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=5661a031-9c92-3b67-a98a-91252b007904
-2023-03-22 07:22:57 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
-2023-03-22 07:22:58 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
-2023-03-22 07:22:58 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2023-03-22 07:22:58 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
-2023-03-22 07:22:58 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2023-03-22 07:22:58 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 11223 ms
-2023-03-22 07:23:02 [main] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/actuator/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
-2023-03-22 07:23:02 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/actuator/**']
-2023-03-22 07:23:02 [main] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/encrypt/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
-2023-03-22 07:23:02 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/encrypt/**']
-2023-03-22 07:23:02 [main] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/decrypt/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
-2023-03-22 07:23:02 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/decrypt/**']
-2023-03-22 07:23:02 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@73ca34e7, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4d98e41b, org.springframework.security.web.context.SecurityContextPersistenceFilter@3cc053, org.springframework.security.web.header.HeaderWriterFilter@365afe87, org.springframework.security.web.csrf.CsrfFilter@69a024a0, org.springframework.security.web.authentication.logout.LogoutFilter@52f6900a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@624b523, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@9b47400, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@5ed5b321, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@611e5819, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7fbd3e75, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1c628f6a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5696c927, org.springframework.security.web.session.SessionManagementFilter@21e45a6f, org.springframework.security.web.access.ExceptionTranslationFilter@160e99e0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@481b2f10]
-2023-03-22 07:23:16 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
-2023-03-22 07:23:16 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
-2023-03-22 07:23:16 [main] INFO  c.m.demo.config.server.ConfigServer - Started ConfigServer in 44.656 seconds (JVM running for 56.669)
-2023-03-22 07:23:18 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-03-22 07:23:18 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2023-03-22 07:23:18 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 16 ms
-2023-03-22 07:23:39 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-17729476583518273344/config-client-elastic_query.yml]' via location 'file:/tmp/config-repo-17729476583518273344/'
-2023-03-22 07:23:39 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-17729476583518273344/config-client.yml]' via location 'file:/tmp/config-repo-17729476583518273344/'
-2023-03-22 07:23:42 [http-nio-8888-exec-6] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-17729476583518273344/config-client-elastic_query.yml]' via location 'file:/tmp/config-repo-17729476583518273344/'
-2023-03-22 07:23:42 [http-nio-8888-exec-6] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-17729476583518273344/config-client.yml]' via location 'file:/tmp/config-repo-17729476583518273344/'
+2023-04-13 01:55:04 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2023-04-13 01:55:08 [main] INFO  c.m.demo.config.server.ConfigServer - Starting ConfigServer v1.0-SNAPSHOT using Java 17.0.6 on 3be9f6f3778b with PID 1 (/workspace/BOOT-INF/classes started by cnb in /workspace)
+2023-04-13 01:55:08 [main] INFO  c.m.demo.config.server.ConfigServer - No active profile set, falling back to 1 default profile: "default"
+2023-04-13 01:55:41 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=5661a031-9c92-3b67-a98a-91252b007904
+2023-04-13 01:55:48 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2023-04-13 01:55:49 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2023-04-13 01:55:49 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-04-13 01:55:49 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-04-13 01:55:50 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-04-13 01:55:50 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 37345 ms
+2023-04-13 01:56:02 [main] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/actuator/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-04-13 01:56:02 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/actuator/**']
+2023-04-13 01:56:02 [main] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/encrypt/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-04-13 01:56:02 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/encrypt/**']
+2023-04-13 01:56:02 [main] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/decrypt/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-04-13 01:56:02 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/decrypt/**']
+2023-04-13 01:56:03 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4e140497, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@481b2f10, org.springframework.security.web.context.SecurityContextPersistenceFilter@2e71240b, org.springframework.security.web.header.HeaderWriterFilter@4bf80c29, org.springframework.security.web.csrf.CsrfFilter@21ea996f, org.springframework.security.web.authentication.logout.LogoutFilter@9b47400, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5b1efaaf, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@4b425577, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@2b6c7012, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@51c65a43, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2b44d6d0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@63a9c661, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@31acfd4e, org.springframework.security.web.session.SessionManagementFilter@515b9d4a, org.springframework.security.web.access.ExceptionTranslationFilter@48268eec, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5e9bbd9d]
+2023-04-13 01:56:18 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2023-04-13 01:56:18 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2023-04-13 01:56:18 [main] INFO  c.m.demo.config.server.ConfigServer - Started ConfigServer in 141.673 seconds (JVM running for 184.585)
+2023-04-13 01:56:19 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-13 01:56:19 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-04-13 01:56:19 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2023-04-13 01:57:11 [http-nio-8888-exec-6] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-10693401665584345712/config-client-twitter_to_kafka.yml]' via location 'file:/tmp/config-repo-10693401665584345712/'
+2023-04-13 01:57:11 [http-nio-8888-exec-6] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-10693401665584345712/config-client.yml]' via location 'file:/tmp/config-repo-10693401665584345712/'
+2023-04-13 01:57:14 [http-nio-8888-exec-8] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-10693401665584345712/config-client-elastic_query.yml]' via location 'file:/tmp/config-repo-10693401665584345712/'
+2023-04-13 01:57:14 [http-nio-8888-exec-8] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-10693401665584345712/config-client.yml]' via location 'file:/tmp/config-repo-10693401665584345712/'
+2023-04-13 01:57:17 [http-nio-8888-exec-9] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-10693401665584345712/config-client-kafka_streams.yml]' via location 'file:/tmp/config-repo-10693401665584345712/'
+2023-04-13 01:57:17 [http-nio-8888-exec-9] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-10693401665584345712/config-client.yml]' via location 'file:/tmp/config-repo-10693401665584345712/'
+2023-04-13 01:57:19 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-10693401665584345712/config-client-elastic_query_web.yml]' via location 'file:/tmp/config-repo-10693401665584345712/'
+2023-04-13 01:57:19 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-10693401665584345712/config-client.yml]' via location 'file:/tmp/config-repo-10693401665584345712/'
+2023-04-13 01:57:23 [http-nio-8888-exec-4] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-10693401665584345712/config-client-elastic_query_web_2.yml]' via location 'file:/tmp/config-repo-10693401665584345712/'
+2023-04-13 01:57:24 [http-nio-8888-exec-4] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-10693401665584345712/config-client.yml]' via location 'file:/tmp/config-repo-10693401665584345712/'
+2023-04-13 04:34:08 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2023-04-13 04:34:09 [main] INFO  c.m.demo.config.server.ConfigServer - Starting ConfigServer v1.0-SNAPSHOT using Java 17.0.6 on bb52dc5301ae with PID 1 (/workspace/BOOT-INF/classes started by cnb in /workspace)
+2023-04-13 04:34:09 [main] INFO  c.m.demo.config.server.ConfigServer - No active profile set, falling back to 1 default profile: "default"
+2023-04-13 04:34:49 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=5661a031-9c92-3b67-a98a-91252b007904
+2023-04-13 04:34:56 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2023-04-13 04:34:56 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2023-04-13 04:34:56 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-04-13 04:34:56 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-04-13 04:34:57 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-04-13 04:34:57 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 41511 ms
+2023-04-13 04:35:04 [main] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/actuator/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-04-13 04:35:04 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/actuator/**']
+2023-04-13 04:35:04 [main] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/encrypt/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-04-13 04:35:04 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/encrypt/**']
+2023-04-13 04:35:04 [main] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/decrypt/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-04-13 04:35:04 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/decrypt/**']
+2023-04-13 04:35:04 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4e80a001, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@624b523, org.springframework.security.web.context.SecurityContextPersistenceFilter@50085d9c, org.springframework.security.web.header.HeaderWriterFilter@2e71240b, org.springframework.security.web.csrf.CsrfFilter@4e8b357d, org.springframework.security.web.authentication.logout.LogoutFilter@4e0cc334, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4c731956, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@365afe87, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@50b46e24, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@31acfd4e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@63a9c661, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4f3e9fbb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1c30cb85, org.springframework.security.web.session.SessionManagementFilter@2b44d6d0, org.springframework.security.web.access.ExceptionTranslationFilter@39b626e5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5b1efaaf]
+2023-04-13 04:35:20 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2023-04-13 04:35:20 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2023-04-13 04:35:20 [main] INFO  c.m.demo.config.server.ConfigServer - Started ConfigServer in 118.094 seconds (JVM running for 153.708)
+2023-04-13 04:35:21 [http-nio-8888-exec-3] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-13 04:35:21 [http-nio-8888-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-04-13 04:35:21 [http-nio-8888-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 16 ms
+2023-04-13 04:36:20 [http-nio-8888-exec-8] WARN  o.a.c.util.SessionIdGeneratorBase - Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [139] milliseconds.
+2023-04-13 04:36:20 [http-nio-8888-exec-2] WARN  o.a.c.util.SessionIdGeneratorBase - Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [136] milliseconds.
+2023-04-13 04:36:26 [http-nio-8888-exec-8] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-14325784859534568740/config-client-kafka_streams.yml]' via location 'file:/tmp/config-repo-14325784859534568740/'
+2023-04-13 04:36:26 [http-nio-8888-exec-8] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-14325784859534568740/config-client.yml]' via location 'file:/tmp/config-repo-14325784859534568740/'
+2023-04-13 04:36:29 [http-nio-8888-exec-6] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-14325784859534568740/config-client-twitter_to_kafka.yml]' via location 'file:/tmp/config-repo-14325784859534568740/'
+2023-04-13 04:36:29 [http-nio-8888-exec-6] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-14325784859534568740/config-client.yml]' via location 'file:/tmp/config-repo-14325784859534568740/'
+2023-04-13 04:36:31 [http-nio-8888-exec-2] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-14325784859534568740/config-client-elastic_query.yml]' via location 'file:/tmp/config-repo-14325784859534568740/'
+2023-04-13 04:36:31 [http-nio-8888-exec-2] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-14325784859534568740/config-client.yml]' via location 'file:/tmp/config-repo-14325784859534568740/'
+2023-04-13 04:36:34 [http-nio-8888-exec-10] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-14325784859534568740/config-client-elastic_query_web_2.yml]' via location 'file:/tmp/config-repo-14325784859534568740/'
+2023-04-13 04:36:34 [http-nio-8888-exec-10] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-14325784859534568740/config-client.yml]' via location 'file:/tmp/config-repo-14325784859534568740/'
+2023-04-13 04:36:38 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-14325784859534568740/config-client-elastic_query_web.yml]' via location 'file:/tmp/config-repo-14325784859534568740/'
+2023-04-13 04:36:38 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-14325784859534568740/config-client.yml]' via location 'file:/tmp/config-repo-14325784859534568740/'
+2023-04-13 04:36:43 [http-nio-8888-exec-9] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-14325784859534568740/config-client-elastic_query.yml]' via location 'file:/tmp/config-repo-14325784859534568740/'
+2023-04-13 04:36:43 [http-nio-8888-exec-9] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-14325784859534568740/config-client.yml]' via location 'file:/tmp/config-repo-14325784859534568740/'
+2023-04-13 05:00:19 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2023-04-13 05:00:21 [main] INFO  c.m.demo.config.server.ConfigServer - Starting ConfigServer v1.0-SNAPSHOT using Java 17.0.6 on 3a39b9759c67 with PID 1 (/workspace/BOOT-INF/classes started by cnb in /workspace)
+2023-04-13 05:00:21 [main] INFO  c.m.demo.config.server.ConfigServer - No active profile set, falling back to 1 default profile: "default"
+2023-04-13 05:01:02 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=5661a031-9c92-3b67-a98a-91252b007904
+2023-04-13 05:01:08 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2023-04-13 05:01:08 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2023-04-13 05:01:08 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-04-13 05:01:08 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-04-13 05:01:09 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-04-13 05:01:09 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 39224 ms
+2023-04-13 05:01:16 [main] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/actuator/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-04-13 05:01:16 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/actuator/**']
+2023-04-13 05:01:17 [main] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/encrypt/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-04-13 05:01:17 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/encrypt/**']
+2023-04-13 05:01:17 [main] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/decrypt/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-04-13 05:01:17 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/decrypt/**']
+2023-04-13 05:01:17 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@681c0ae6, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@73ca34e7, org.springframework.security.web.context.SecurityContextPersistenceFilter@7b53b1ad, org.springframework.security.web.header.HeaderWriterFilter@4f3e9fbb, org.springframework.security.web.csrf.CsrfFilter@48268eec, org.springframework.security.web.authentication.logout.LogoutFilter@23ca36d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4e80a001, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1c628f6a, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@4d98e41b, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@52bd9a27, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@388c519, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2ce03e86, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5ed5b321, org.springframework.security.web.session.SessionManagementFilter@43471a7e, org.springframework.security.web.access.ExceptionTranslationFilter@3bb9ca38, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4e140497]
+2023-04-13 05:01:32 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2023-04-13 05:01:33 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2023-04-13 05:01:33 [main] INFO  c.m.demo.config.server.ConfigServer - Started ConfigServer in 117.684 seconds (JVM running for 148.993)
+2023-04-13 05:01:33 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-13 05:01:33 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-04-13 05:01:33 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 145 ms
+2023-04-13 05:02:34 [http-nio-8888-exec-1] WARN  o.a.c.util.SessionIdGeneratorBase - Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [135] milliseconds.
+2023-04-13 05:02:34 [http-nio-8888-exec-8] WARN  o.a.c.util.SessionIdGeneratorBase - Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [143] milliseconds.
+2023-04-13 05:02:37 [http-nio-8888-exec-8] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-16980374280037482681/config-client-kafka_streams.yml]' via location 'file:/tmp/config-repo-16980374280037482681/'
+2023-04-13 05:02:37 [http-nio-8888-exec-8] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-16980374280037482681/config-client.yml]' via location 'file:/tmp/config-repo-16980374280037482681/'
+2023-04-13 05:02:42 [http-nio-8888-exec-9] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-16980374280037482681/config-client-twitter_to_kafka.yml]' via location 'file:/tmp/config-repo-16980374280037482681/'
+2023-04-13 05:02:42 [http-nio-8888-exec-9] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-16980374280037482681/config-client.yml]' via location 'file:/tmp/config-repo-16980374280037482681/'
+2023-04-13 05:02:45 [http-nio-8888-exec-6] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-16980374280037482681/config-client-elastic_query.yml]' via location 'file:/tmp/config-repo-16980374280037482681/'
+2023-04-13 05:02:45 [http-nio-8888-exec-6] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-16980374280037482681/config-client.yml]' via location 'file:/tmp/config-repo-16980374280037482681/'
+2023-04-13 05:02:48 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-16980374280037482681/config-client-elastic_query.yml]' via location 'file:/tmp/config-repo-16980374280037482681/'
+2023-04-13 05:02:48 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-16980374280037482681/config-client.yml]' via location 'file:/tmp/config-repo-16980374280037482681/'
+2023-04-13 05:02:52 [http-nio-8888-exec-2] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-16980374280037482681/config-client-elastic_query_web_2.yml]' via location 'file:/tmp/config-repo-16980374280037482681/'
+2023-04-13 05:02:52 [http-nio-8888-exec-2] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-16980374280037482681/config-client.yml]' via location 'file:/tmp/config-repo-16980374280037482681/'
+2023-04-13 05:02:55 [http-nio-8888-exec-10] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-16980374280037482681/config-client-elastic_query_web.yml]' via location 'file:/tmp/config-repo-16980374280037482681/'
+2023-04-13 05:02:55 [http-nio-8888-exec-10] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-16980374280037482681/config-client.yml]' via location 'file:/tmp/config-repo-16980374280037482681/'
+2023-04-13 06:12:08 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2023-04-13 06:12:10 [main] INFO  c.m.demo.config.server.ConfigServer - Starting ConfigServer v1.0-SNAPSHOT using Java 17.0.6 on dd75419305a2 with PID 1 (/workspace/BOOT-INF/classes started by cnb in /workspace)
+2023-04-13 06:12:10 [main] INFO  c.m.demo.config.server.ConfigServer - No active profile set, falling back to 1 default profile: "default"
+2023-04-13 06:12:51 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=5661a031-9c92-3b67-a98a-91252b007904
+2023-04-13 06:12:58 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2023-04-13 06:12:58 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2023-04-13 06:12:58 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-04-13 06:12:58 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-04-13 06:12:59 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-04-13 06:12:59 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 44686 ms
+2023-04-13 06:13:06 [main] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/actuator/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-04-13 06:13:06 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/actuator/**']
+2023-04-13 06:13:06 [main] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/encrypt/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-04-13 06:13:06 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/encrypt/**']
+2023-04-13 06:13:06 [main] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/decrypt/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-04-13 06:13:06 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/decrypt/**']
+2023-04-13 06:13:07 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@740dcae3, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4e140497, org.springframework.security.web.context.SecurityContextPersistenceFilter@32a4ecbe, org.springframework.security.web.header.HeaderWriterFilter@69a024a0, org.springframework.security.web.csrf.CsrfFilter@5c059a68, org.springframework.security.web.authentication.logout.LogoutFilter@1c628f6a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@285005b8, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@63a9c661, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@481b2f10, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@14d25b6e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@23cd5d42, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5df7e31b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2b6c7012, org.springframework.security.web.session.SessionManagementFilter@2d7637e6, org.springframework.security.web.access.ExceptionTranslationFilter@1e3f0aea, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2180e789]
+2023-04-13 06:14:16 [main] WARN  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - Error occured cloning to base directory.
+org.eclipse.jgit.api.errors.TransportException: https://github.com/tronglv92/config-server-repository: Connection time out: github.com
+	at org.eclipse.jgit.api.FetchCommand.call(FetchCommand.java:224)
+	at org.eclipse.jgit.api.CloneCommand.fetch(CloneCommand.java:311)
+	at org.eclipse.jgit.api.CloneCommand.call(CloneCommand.java:182)
+	at org.springframework.cloud.config.server.environment.JGitEnvironmentRepository.cloneToBasedir(JGitEnvironmentRepository.java:651)
+	at org.springframework.cloud.config.server.environment.JGitEnvironmentRepository.initClonedRepository(JGitEnvironmentRepository.java:356)
+	at org.springframework.cloud.config.server.environment.JGitEnvironmentRepository.afterPropertiesSet(JGitEnvironmentRepository.java:277)
+	at org.springframework.cloud.config.server.environment.MultipleJGitEnvironmentRepository.afterPropertiesSet(MultipleJGitEnvironmentRepository.java:66)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.microservices.demo.config.server.ConfigServer.main(ConfigServer.java:11)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:108)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58)
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:65)
+Caused by: org.eclipse.jgit.errors.TransportException: https://github.com/tronglv92/config-server-repository: Connection time out: github.com
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:725)
+	at org.eclipse.jgit.transport.TransportHttp.openFetch(TransportHttp.java:465)
+	at org.eclipse.jgit.transport.FetchProcess.executeImp(FetchProcess.java:142)
+	at org.eclipse.jgit.transport.FetchProcess.execute(FetchProcess.java:94)
+	at org.eclipse.jgit.transport.Transport.fetch(Transport.java:1309)
+	at org.eclipse.jgit.api.FetchCommand.call(FetchCommand.java:213)
+	... 32 common frames omitted
+Caused by: org.apache.http.conn.ConnectTimeoutException: Connect to github.com:443 [github.com/20.205.243.166] failed: Connect timed out
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.eclipse.jgit.transport.http.apache.HttpClientConnection.execute(HttpClientConnection.java:274)
+	at org.eclipse.jgit.transport.http.apache.HttpClientConnection.getResponseCode(HttpClientConnection.java:251)
+	at org.eclipse.jgit.util.HttpSupport.response(HttpSupport.java:232)
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:654)
+	... 37 common frames omitted
+Caused by: java.net.SocketTimeoutException: Connect timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(Unknown Source)
+	at java.base/java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.base/java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:368)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 50 common frames omitted
+2023-04-13 06:14:16 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'defaultEnvironmentRepository' defined in class path resource [org/springframework/cloud/config/server/config/DefaultRepositoryConfiguration.class]: Invocation of init method failed; nested exception is org.eclipse.jgit.api.errors.TransportException: https://github.com/tronglv92/config-server-repository: Connection time out: github.com
+2023-04-13 06:14:16 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-04-13 06:14:17 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-04-13 06:14:17 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'defaultEnvironmentRepository' defined in class path resource [org/springframework/cloud/config/server/config/DefaultRepositoryConfiguration.class]: Invocation of init method failed; nested exception is org.eclipse.jgit.api.errors.TransportException: https://github.com/tronglv92/config-server-repository: Connection time out: github.com
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.microservices.demo.config.server.ConfigServer.main(ConfigServer.java:11)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:108)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58)
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:65)
+Caused by: org.eclipse.jgit.api.errors.TransportException: https://github.com/tronglv92/config-server-repository: Connection time out: github.com
+	at org.eclipse.jgit.api.FetchCommand.call(FetchCommand.java:224)
+	at org.eclipse.jgit.api.CloneCommand.fetch(CloneCommand.java:311)
+	at org.eclipse.jgit.api.CloneCommand.call(CloneCommand.java:182)
+	at org.springframework.cloud.config.server.environment.JGitEnvironmentRepository.cloneToBasedir(JGitEnvironmentRepository.java:651)
+	at org.springframework.cloud.config.server.environment.JGitEnvironmentRepository.initClonedRepository(JGitEnvironmentRepository.java:356)
+	at org.springframework.cloud.config.server.environment.JGitEnvironmentRepository.afterPropertiesSet(JGitEnvironmentRepository.java:277)
+	at org.springframework.cloud.config.server.environment.MultipleJGitEnvironmentRepository.afterPropertiesSet(MultipleJGitEnvironmentRepository.java:66)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 24 common frames omitted
+Caused by: org.eclipse.jgit.errors.TransportException: https://github.com/tronglv92/config-server-repository: Connection time out: github.com
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:725)
+	at org.eclipse.jgit.transport.TransportHttp.openFetch(TransportHttp.java:465)
+	at org.eclipse.jgit.transport.FetchProcess.executeImp(FetchProcess.java:142)
+	at org.eclipse.jgit.transport.FetchProcess.execute(FetchProcess.java:94)
+	at org.eclipse.jgit.transport.Transport.fetch(Transport.java:1309)
+	at org.eclipse.jgit.api.FetchCommand.call(FetchCommand.java:213)
+	... 32 common frames omitted
+Caused by: org.apache.http.conn.ConnectTimeoutException: Connect to github.com:443 [github.com/20.205.243.166] failed: Connect timed out
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.eclipse.jgit.transport.http.apache.HttpClientConnection.execute(HttpClientConnection.java:274)
+	at org.eclipse.jgit.transport.http.apache.HttpClientConnection.getResponseCode(HttpClientConnection.java:251)
+	at org.eclipse.jgit.util.HttpSupport.response(HttpSupport.java:232)
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:654)
+	... 37 common frames omitted
+Caused by: java.net.SocketTimeoutException: Connect timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(Unknown Source)
+	at java.base/java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.base/java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:368)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 50 common frames omitted
+2023-04-13 06:17:19 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2023-04-13 06:17:22 [main] INFO  c.m.demo.config.server.ConfigServer - Starting ConfigServer v1.0-SNAPSHOT using Java 17.0.6 on 84491b651d51 with PID 1 (/workspace/BOOT-INF/classes started by cnb in /workspace)
+2023-04-13 06:17:23 [main] INFO  c.m.demo.config.server.ConfigServer - No active profile set, falling back to 1 default profile: "default"
+2023-04-13 06:18:00 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=5661a031-9c92-3b67-a98a-91252b007904
+2023-04-13 06:18:04 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2023-04-13 06:18:05 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2023-04-13 06:18:05 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-04-13 06:18:05 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-04-13 06:18:06 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-04-13 06:18:06 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 39330 ms
+2023-04-13 06:18:13 [main] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/actuator/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-04-13 06:18:13 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/actuator/**']
+2023-04-13 06:18:13 [main] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/encrypt/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-04-13 06:18:13 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/encrypt/**']
+2023-04-13 06:18:13 [main] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/decrypt/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-04-13 06:18:13 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/decrypt/**']
+2023-04-13 06:18:15 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@624b523, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@50b46e24, org.springframework.security.web.context.SecurityContextPersistenceFilter@5df7e31b, org.springframework.security.web.header.HeaderWriterFilter@23cd5d42, org.springframework.security.web.csrf.CsrfFilter@2e1eb85f, org.springframework.security.web.authentication.logout.LogoutFilter@1e12a5a6, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@56826a75, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@43471a7e, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@1c30cb85, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5f726750, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4b425577, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@365afe87, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@577bf0aa, org.springframework.security.web.session.SessionManagementFilter@3e900e1a, org.springframework.security.web.access.ExceptionTranslationFilter@32a4ecbe, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@27585351]
+2023-04-13 06:19:23 [main] WARN  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - Error occured cloning to base directory.
+org.eclipse.jgit.api.errors.TransportException: https://github.com/tronglv92/config-server-repository: Connection time out: github.com
+	at org.eclipse.jgit.api.FetchCommand.call(FetchCommand.java:224)
+	at org.eclipse.jgit.api.CloneCommand.fetch(CloneCommand.java:311)
+	at org.eclipse.jgit.api.CloneCommand.call(CloneCommand.java:182)
+	at org.springframework.cloud.config.server.environment.JGitEnvironmentRepository.cloneToBasedir(JGitEnvironmentRepository.java:651)
+	at org.springframework.cloud.config.server.environment.JGitEnvironmentRepository.initClonedRepository(JGitEnvironmentRepository.java:356)
+	at org.springframework.cloud.config.server.environment.JGitEnvironmentRepository.afterPropertiesSet(JGitEnvironmentRepository.java:277)
+	at org.springframework.cloud.config.server.environment.MultipleJGitEnvironmentRepository.afterPropertiesSet(MultipleJGitEnvironmentRepository.java:66)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.microservices.demo.config.server.ConfigServer.main(ConfigServer.java:11)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:108)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58)
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:65)
+Caused by: org.eclipse.jgit.errors.TransportException: https://github.com/tronglv92/config-server-repository: Connection time out: github.com
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:725)
+	at org.eclipse.jgit.transport.TransportHttp.openFetch(TransportHttp.java:465)
+	at org.eclipse.jgit.transport.FetchProcess.executeImp(FetchProcess.java:142)
+	at org.eclipse.jgit.transport.FetchProcess.execute(FetchProcess.java:94)
+	at org.eclipse.jgit.transport.Transport.fetch(Transport.java:1309)
+	at org.eclipse.jgit.api.FetchCommand.call(FetchCommand.java:213)
+	... 32 common frames omitted
+Caused by: org.apache.http.conn.ConnectTimeoutException: Connect to github.com:443 [github.com/20.205.243.166] failed: Connect timed out
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.eclipse.jgit.transport.http.apache.HttpClientConnection.execute(HttpClientConnection.java:274)
+	at org.eclipse.jgit.transport.http.apache.HttpClientConnection.getResponseCode(HttpClientConnection.java:251)
+	at org.eclipse.jgit.util.HttpSupport.response(HttpSupport.java:232)
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:654)
+	... 37 common frames omitted
+Caused by: java.net.SocketTimeoutException: Connect timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(Unknown Source)
+	at java.base/java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.base/java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:368)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 50 common frames omitted
+2023-04-13 06:19:23 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'defaultEnvironmentRepository' defined in class path resource [org/springframework/cloud/config/server/config/DefaultRepositoryConfiguration.class]: Invocation of init method failed; nested exception is org.eclipse.jgit.api.errors.TransportException: https://github.com/tronglv92/config-server-repository: Connection time out: github.com
+2023-04-13 06:19:24 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-04-13 06:19:24 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-04-13 06:19:24 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'defaultEnvironmentRepository' defined in class path resource [org/springframework/cloud/config/server/config/DefaultRepositoryConfiguration.class]: Invocation of init method failed; nested exception is org.eclipse.jgit.api.errors.TransportException: https://github.com/tronglv92/config-server-repository: Connection time out: github.com
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.microservices.demo.config.server.ConfigServer.main(ConfigServer.java:11)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:108)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58)
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:65)
+Caused by: org.eclipse.jgit.api.errors.TransportException: https://github.com/tronglv92/config-server-repository: Connection time out: github.com
+	at org.eclipse.jgit.api.FetchCommand.call(FetchCommand.java:224)
+	at org.eclipse.jgit.api.CloneCommand.fetch(CloneCommand.java:311)
+	at org.eclipse.jgit.api.CloneCommand.call(CloneCommand.java:182)
+	at org.springframework.cloud.config.server.environment.JGitEnvironmentRepository.cloneToBasedir(JGitEnvironmentRepository.java:651)
+	at org.springframework.cloud.config.server.environment.JGitEnvironmentRepository.initClonedRepository(JGitEnvironmentRepository.java:356)
+	at org.springframework.cloud.config.server.environment.JGitEnvironmentRepository.afterPropertiesSet(JGitEnvironmentRepository.java:277)
+	at org.springframework.cloud.config.server.environment.MultipleJGitEnvironmentRepository.afterPropertiesSet(MultipleJGitEnvironmentRepository.java:66)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 24 common frames omitted
+Caused by: org.eclipse.jgit.errors.TransportException: https://github.com/tronglv92/config-server-repository: Connection time out: github.com
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:725)
+	at org.eclipse.jgit.transport.TransportHttp.openFetch(TransportHttp.java:465)
+	at org.eclipse.jgit.transport.FetchProcess.executeImp(FetchProcess.java:142)
+	at org.eclipse.jgit.transport.FetchProcess.execute(FetchProcess.java:94)
+	at org.eclipse.jgit.transport.Transport.fetch(Transport.java:1309)
+	at org.eclipse.jgit.api.FetchCommand.call(FetchCommand.java:213)
+	... 32 common frames omitted
+Caused by: org.apache.http.conn.ConnectTimeoutException: Connect to github.com:443 [github.com/20.205.243.166] failed: Connect timed out
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.eclipse.jgit.transport.http.apache.HttpClientConnection.execute(HttpClientConnection.java:274)
+	at org.eclipse.jgit.transport.http.apache.HttpClientConnection.getResponseCode(HttpClientConnection.java:251)
+	at org.eclipse.jgit.util.HttpSupport.response(HttpSupport.java:232)
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:654)
+	... 37 common frames omitted
+Caused by: java.net.SocketTimeoutException: Connect timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(Unknown Source)
+	at java.base/java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.base/java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:368)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 50 common frames omitted
+2023-04-13 06:22:28 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2023-04-13 06:22:29 [main] INFO  c.m.demo.config.server.ConfigServer - Starting ConfigServer v1.0-SNAPSHOT using Java 17.0.6 on 66ed49d831ab with PID 1 (/workspace/BOOT-INF/classes started by cnb in /workspace)
+2023-04-13 06:22:29 [main] INFO  c.m.demo.config.server.ConfigServer - No active profile set, falling back to 1 default profile: "default"
+2023-04-13 06:23:07 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=5661a031-9c92-3b67-a98a-91252b007904
+2023-04-13 06:23:16 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2023-04-13 06:23:16 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2023-04-13 06:23:16 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-04-13 06:23:16 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-04-13 06:23:17 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-04-13 06:23:18 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 44914 ms
+2023-04-13 06:23:25 [main] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/actuator/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-04-13 06:23:25 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/actuator/**']
+2023-04-13 06:23:25 [main] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/encrypt/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-04-13 06:23:25 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/encrypt/**']
+2023-04-13 06:23:25 [main] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/decrypt/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-04-13 06:23:25 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/decrypt/**']
+2023-04-13 06:23:25 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4c731956, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@56826a75, org.springframework.security.web.context.SecurityContextPersistenceFilter@48268eec, org.springframework.security.web.header.HeaderWriterFilter@6d6f6860, org.springframework.security.web.csrf.CsrfFilter@1d4f5506, org.springframework.security.web.authentication.logout.LogoutFilter@388c519, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@477021ee, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@23cd5d42, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@49cd946c, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5b35c7d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4bf80c29, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2e71240b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@40bf4386, org.springframework.security.web.session.SessionManagementFilter@a85644c, org.springframework.security.web.access.ExceptionTranslationFilter@31723307, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@674da77b]
+2023-04-13 06:33:30 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2023-04-13 06:33:33 [main] INFO  c.m.demo.config.server.ConfigServer - Starting ConfigServer v1.0-SNAPSHOT using Java 17.0.6 on 41663d819687 with PID 1 (/workspace/BOOT-INF/classes started by cnb in /workspace)
+2023-04-13 06:33:33 [main] INFO  c.m.demo.config.server.ConfigServer - No active profile set, falling back to 1 default profile: "default"
+2023-04-13 06:34:25 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=5661a031-9c92-3b67-a98a-91252b007904
+2023-04-13 06:34:32 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2023-04-13 06:34:32 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2023-04-13 06:34:32 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-04-13 06:34:32 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-04-13 06:34:33 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-04-13 06:34:33 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 46273 ms
+2023-04-13 06:34:43 [main] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/actuator/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-04-13 06:34:43 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/actuator/**']
+2023-04-13 06:34:43 [main] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/encrypt/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-04-13 06:34:43 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/encrypt/**']
+2023-04-13 06:34:43 [main] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/decrypt/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-04-13 06:34:43 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/decrypt/**']
+2023-04-13 06:34:44 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@624b523, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@50b46e24, org.springframework.security.web.context.SecurityContextPersistenceFilter@5df7e31b, org.springframework.security.web.header.HeaderWriterFilter@23cd5d42, org.springframework.security.web.csrf.CsrfFilter@2e1eb85f, org.springframework.security.web.authentication.logout.LogoutFilter@1e12a5a6, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@56826a75, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@43471a7e, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@1c30cb85, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5f726750, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4b425577, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@365afe87, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@577bf0aa, org.springframework.security.web.session.SessionManagementFilter@3e900e1a, org.springframework.security.web.access.ExceptionTranslationFilter@32a4ecbe, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@27585351]
+2023-04-13 06:35:06 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2023-04-13 06:35:06 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2023-04-13 06:35:06 [main] INFO  c.m.demo.config.server.ConfigServer - Started ConfigServer in 177.162 seconds (JVM running for 217.605)
+2023-04-13 06:35:07 [http-nio-8888-exec-3] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-13 06:35:07 [http-nio-8888-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-04-13 06:35:07 [http-nio-8888-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 13 ms
+2023-04-13 06:36:42 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-6506027788136667119/config-client-elastic_query_web_2.yml]' via location 'file:/tmp/config-repo-6506027788136667119/'
+2023-04-13 06:36:42 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-6506027788136667119/config-client.yml]' via location 'file:/tmp/config-repo-6506027788136667119/'
+2023-04-13 06:36:48 [http-nio-8888-exec-6] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-6506027788136667119/config-client-twitter_to_kafka.yml]' via location 'file:/tmp/config-repo-6506027788136667119/'
+2023-04-13 06:36:48 [http-nio-8888-exec-6] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-6506027788136667119/config-client.yml]' via location 'file:/tmp/config-repo-6506027788136667119/'
+2023-04-13 06:36:51 [http-nio-8888-exec-9] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-6506027788136667119/config-client-kafka_streams.yml]' via location 'file:/tmp/config-repo-6506027788136667119/'
+2023-04-13 06:36:51 [http-nio-8888-exec-9] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-6506027788136667119/config-client.yml]' via location 'file:/tmp/config-repo-6506027788136667119/'
+2023-04-13 06:36:54 [http-nio-8888-exec-4] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-6506027788136667119/config-client-elastic_query.yml]' via location 'file:/tmp/config-repo-6506027788136667119/'
+2023-04-13 06:36:54 [http-nio-8888-exec-4] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-6506027788136667119/config-client.yml]' via location 'file:/tmp/config-repo-6506027788136667119/'
+2023-04-13 06:36:57 [http-nio-8888-exec-8] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-6506027788136667119/config-client-elastic_query.yml]' via location 'file:/tmp/config-repo-6506027788136667119/'
+2023-04-13 06:36:57 [http-nio-8888-exec-8] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-6506027788136667119/config-client.yml]' via location 'file:/tmp/config-repo-6506027788136667119/'
+2023-04-13 06:37:01 [http-nio-8888-exec-10] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-6506027788136667119/config-client-elastic_query_web.yml]' via location 'file:/tmp/config-repo-6506027788136667119/'
+2023-04-13 06:37:01 [http-nio-8888-exec-10] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/tmp/config-repo-6506027788136667119/config-client.yml]' via location 'file:/tmp/config-repo-6506027788136667119/'

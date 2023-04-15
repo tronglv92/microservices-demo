@@ -1,60 +1,287 @@
-2023-03-22 07:23:41 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
-2023-03-22 07:23:42 [main] INFO  c.m.d.e.q.s.ElasticQueryServiceApplication - Starting ElasticQueryServiceApplication v1.0-SNAPSHOT using Java 17.0.6 on beede4becc4b with PID 1146 (/workspace/BOOT-INF/classes started by root in /workspace)
-2023-03-22 07:23:42 [main] INFO  c.m.d.e.q.s.ElasticQueryServiceApplication - The following 1 profile is active: "elastic_query"
-2023-03-22 07:23:42 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://config-server:8888
-2023-03-22 07:23:42 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=elastic-query-service,config-client, profiles=[elastic_query], label=null, version=87381ac459289ebba1e94d10f5df1b7658d26e9a, state=null
-2023-03-22 07:23:44 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
-2023-03-22 07:23:44 [main] INFO  c.m.d.e.q.s.ElasticQueryServiceApplication - Starting ElasticQueryServiceApplication v1.0-SNAPSHOT using Java 17.0.6 on 1e632f3b1fef with PID 1145 (/workspace/BOOT-INF/classes started by root in /workspace)
-2023-03-22 07:23:45 [main] INFO  c.m.d.e.q.s.ElasticQueryServiceApplication - The following 1 profile is active: "elastic_query"
-2023-03-22 07:23:45 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://config-server:8888
-2023-03-22 07:23:45 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=elastic-query-service,config-client, profiles=[elastic_query], label=null, version=87381ac459289ebba1e94d10f5df1b7658d26e9a, state=null
-2023-03-22 07:23:49 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
-2023-03-22 07:23:49 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 491 ms. Found 1 Elasticsearch repository interfaces.
-2023-03-22 07:23:51 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
-2023-03-22 07:23:51 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
-2023-03-22 07:23:51 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 58 ms. Found 0 Reactive Elasticsearch repository interfaces.
-2023-03-22 07:23:52 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 626 ms. Found 1 Elasticsearch repository interfaces.
-2023-03-22 07:23:54 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=7c2103b3-35a0-30b8-ba0b-25b84d680ca5
-2023-03-22 07:23:54 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
-2023-03-22 07:23:54 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23 ms. Found 0 Reactive Elasticsearch repository interfaces.
-2023-03-22 07:23:56 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=7c2103b3-35a0-30b8-ba0b-25b84d680ca5
-2023-03-22 07:23:56 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8186 (http)
-2023-03-22 07:23:57 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8186"]
-2023-03-22 07:23:57 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2023-03-22 07:23:57 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
-2023-03-22 07:23:58 [main] INFO  o.a.c.c.C.[.[.[/elastic-query-service] - Initializing Spring embedded WebApplicationContext
-2023-03-22 07:23:58 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 16119 ms
-2023-03-22 07:23:59 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8185 (http)
-2023-03-22 07:23:59 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8185"]
-2023-03-22 07:23:59 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2023-03-22 07:23:59 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
-2023-03-22 07:24:00 [main] INFO  o.a.c.c.C.[.[.[/elastic-query-service] - Initializing Spring embedded WebApplicationContext
-2023-03-22 07:24:00 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 15326 ms
-2023-03-22 07:24:05 [I/O dispatcher 1] WARN  org.elasticsearch.client.RestClient - request [GET http://elastic-1:9200/] returned 1 warnings: [299 Elasticsearch-7.17.4-79878662c54c886ae89206c685d9f1051a9d6411 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.17/security-minimal-setup.html to enable security."]
-2023-03-22 07:24:05 [main] WARN  org.elasticsearch.client.RestClient - request [HEAD http://elastic-1:9200/twitter-index] returned 1 warnings: [299 Elasticsearch-7.17.4-79878662c54c886ae89206c685d9f1051a9d6411 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.17/security-minimal-setup.html to enable security."]
-2023-03-22 07:24:06 [main] INFO  c.m.d.e.q.s.config.WebSecurityConfig - userData: UserConfigData(username=test, password=test1234, roles=[USER])
-2023-03-22 07:24:07 [I/O dispatcher 1] WARN  org.elasticsearch.client.RestClient - request [GET http://elastic-1:9200/] returned 1 warnings: [299 Elasticsearch-7.17.4-79878662c54c886ae89206c685d9f1051a9d6411 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.17/security-minimal-setup.html to enable security."]
-2023-03-22 07:24:07 [main] WARN  org.elasticsearch.client.RestClient - request [HEAD http://elastic-1:9200/twitter-index] returned 1 warnings: [299 Elasticsearch-7.17.4-79878662c54c886ae89206c685d9f1051a9d6411 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.17/security-minimal-setup.html to enable security."]
-2023-03-22 07:24:08 [main] INFO  c.m.d.e.q.s.config.WebSecurityConfig - userData: UserConfigData(username=test, password=test1234, roles=[USER])
-2023-03-22 07:24:09 [main] INFO  c.m.d.e.q.s.config.WebSecurityConfig - userConfigData.getUsername(): test
-2023-03-22 07:24:10 [main] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/api-docs']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
-2023-03-22 07:24:10 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/api-docs']
-2023-03-22 07:24:10 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4ae2c01b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1cab19e2, org.springframework.security.web.context.SecurityContextPersistenceFilter@7b795db7, org.springframework.security.web.header.HeaderWriterFilter@5e7e7a7e, org.springframework.security.web.authentication.logout.LogoutFilter@6614289a, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@51df2a41, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@b849fa6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@774c5e5c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6879e983, org.springframework.security.web.session.SessionManagementFilter@1d1c63af, org.springframework.security.web.access.ExceptionTranslationFilter@58a8ea6f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2f0e7fa8]
-2023-03-22 07:24:12 [main] INFO  c.m.d.e.q.s.config.WebSecurityConfig - userConfigData.getUsername(): test
-2023-03-22 07:24:13 [main] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/api-docs']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
-2023-03-22 07:24:13 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/api-docs']
-2023-03-22 07:24:13 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7d5a0b14, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@72ec16f8, org.springframework.security.web.context.SecurityContextPersistenceFilter@5e7e7a7e, org.springframework.security.web.header.HeaderWriterFilter@47fca3cc, org.springframework.security.web.authentication.logout.LogoutFilter@53e82089, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@46fb9581, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1c610f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7296fe0b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@279e1422, org.springframework.security.web.session.SessionManagementFilter@3c6fb501, org.springframework.security.web.access.ExceptionTranslationFilter@16e5344c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@54e94de9]
-2023-03-22 07:24:23 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8185"]
-2023-03-22 07:24:23 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8185 (http) with context path '/elastic-query-service'
-2023-03-22 07:24:24 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8186"]
-2023-03-22 07:24:24 [main] INFO  c.m.d.e.q.s.ElasticQueryServiceApplication - Started ElasticQueryServiceApplication in 53.071 seconds (JVM running for 59.54)
-2023-03-22 07:24:25 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8186 (http) with context path '/elastic-query-service'
-2023-03-22 07:24:25 [main] INFO  c.m.d.e.q.s.ElasticQueryServiceApplication - Started ElasticQueryServiceApplication in 57.323 seconds (JVM running for 62.501)
-2023-03-22 07:25:39 [http-nio-8185-exec-2] INFO  o.a.c.c.C.[.[.[/elastic-query-service] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-03-22 07:25:39 [http-nio-8185-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2023-03-22 07:25:39 [http-nio-8185-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 36 ms
-2023-03-22 07:25:40 [http-nio-8185-exec-2] INFO  c.m.d.e.q.s.b.i.TwitterElasticQueryService - Querying elasticsearch by text adipiscing
-2023-03-22 07:25:41 [http-nio-8185-exec-2] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/twitter-index/_search?typed_keys=true&max_concurrent_shard_requests=5&search_type=query_then_fetch&batched_reduce_size=512] returned 1 warnings: [299 Elasticsearch-7.17.4-79878662c54c886ae89206c685d9f1051a9d6411 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.17/security-minimal-setup.html to enable security."]
-2023-03-22 07:25:41 [http-nio-8185-exec-2] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/twitter-index/_search?typed_keys=true&max_concurrent_shard_requests=5&search_type=query_then_fetch&batched_reduce_size=512] returned 1 warnings: [299 Elasticsearch-7.17.4-79878662c54c886ae89206c685d9f1051a9d6411 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.17/security-minimal-setup.html to enable security."]
-2023-03-22 07:25:42 [http-nio-8185-exec-2] INFO  c.m.d.e.q.c.s.i.TwitterElasticRepositoryQueryClient - 196 of documents with text adipiscing retrieved successfully
-2023-03-22 07:25:43 [http-nio-8185-exec-2] INFO  c.m.d.e.q.s.a.ElasticDocumentController - Elasticsearch returned 196 of documents on port 8185
+2023-04-13 01:57:20 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2023-04-13 01:57:20 [main] INFO  c.m.d.e.q.s.ElasticQueryServiceApplication - Starting ElasticQueryServiceApplication v1.0-SNAPSHOT using Java 17.0.6 on 671b08617764 with PID 1287 (/workspace/BOOT-INF/classes started by root in /workspace)
+2023-04-13 01:57:20 [main] INFO  c.m.d.e.q.s.ElasticQueryServiceApplication - The following 1 profile is active: "elastic_query"
+2023-04-13 01:57:22 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://config-server:8888
+2023-04-13 01:57:22 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=elastic-query-service,config-client, profiles=[elastic_query], label=null, version=31a416cbf3ff6ee1d82122b0c85cd373bd1ee463, state=null
+2023-04-13 01:57:47 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-13 01:57:47 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-04-13 01:57:48 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.microservices.demo.elastic.query.service.dataaccess.repository.UserPermissionRepository; If you want this repository to be a Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ElasticsearchRepository, org.springframework.data.elasticsearch.repository.ElasticsearchRepository
+2023-04-13 01:57:51 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3550 ms. Found 1 Elasticsearch repository interfaces.
+2023-04-13 01:57:58 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-13 01:57:58 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-04-13 01:57:59 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface com.microservices.demo.elastic.query.service.dataaccess.repository.UserPermissionRepository; If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository
+2023-04-13 01:57:59 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 229 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-04-13 01:57:59 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-13 01:57:59 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-13 01:57:59 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 268 ms. Found 1 JPA repository interfaces.
+2023-04-13 01:58:10 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=bd1ddbdc-b68f-3722-a02c-37f8371b8324
+2023-04-13 01:58:30 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8183 (http)
+2023-04-13 01:58:30 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8183"]
+2023-04-13 01:58:30 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-04-13 01:58:30 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-04-13 01:58:34 [main] INFO  o.a.c.c.C.[.[.[/elastic-query-service] - Initializing Spring embedded WebApplicationContext
+2023-04-13 01:58:34 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 71487 ms
+2023-04-13 01:58:42 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-04-13 01:58:49 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-04-13 01:58:52 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-13 01:58:55 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.12.Final
+2023-04-13 01:59:01 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-13 01:59:06 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2023-04-13 01:59:21 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-13 01:59:21 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-13 01:59:30 [I/O dispatcher 1] WARN  org.elasticsearch.client.RestClient - request [GET http://elastic-1:9200/] returned 1 warnings: [299 Elasticsearch-7.17.4-79878662c54c886ae89206c685d9f1051a9d6411 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.17/security-minimal-setup.html to enable security."]
+2023-04-13 01:59:30 [main] WARN  org.elasticsearch.client.RestClient - request [HEAD http://elastic-1:9200/twitter-index] returned 1 warnings: [299 Elasticsearch-7.17.4-79878662c54c886ae89206c685d9f1051a9d6411 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.17/security-minimal-setup.html to enable security."]
+2023-04-13 01:59:31 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'elasticDocumentController' defined in file [/workspace/BOOT-INF/classes/com/microservices/demo/elastic/query/service/api/ElasticDocumentController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterElasticQueryService' defined in file [/workspace/BOOT-INF/classes/com/microservices/demo/elastic/query/service/business/impl/TwitterElasticQueryService.class]: Unsatisfied dependency expressed through constructor parameter 3; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webClientConfig' defined in file [/workspace/BOOT-INF/classes/com/microservices/demo/elastic/query/service/config/WebClientConfig.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.microservices.demo.config.ElasticQueryServiceConfigData$WebClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2023-04-13 01:59:31 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-13 01:59:31 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-04-13 01:59:31 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-04-13 01:59:31 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-04-13 01:59:31 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-04-13 01:59:31 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.microservices.demo.elastic.query.service.config.WebClientConfig required a bean of type 'com.microservices.demo.config.ElasticQueryServiceConfigData$WebClient' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.microservices.demo.config.ElasticQueryServiceConfigData$WebClient' in your configuration.
+
+2023-04-13 04:36:38 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2023-04-13 04:36:38 [main] INFO  c.m.d.e.q.s.ElasticQueryServiceApplication - Starting ElasticQueryServiceApplication v1.0-SNAPSHOT using Java 17.0.6 on 5ba685a29d4b with PID 1243 (/workspace/BOOT-INF/classes started by root in /workspace)
+2023-04-13 04:36:38 [main] INFO  c.m.d.e.q.s.ElasticQueryServiceApplication - The following 1 profile is active: "elastic_query"
+2023-04-13 04:36:41 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://config-server:8888
+2023-04-13 04:36:41 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=elastic-query-service,config-client, profiles=[elastic_query], label=null, version=2dc25ac8cb6308fd11b25b02fc7f28414ec6f497, state=null
+2023-04-13 04:36:52 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2023-04-13 04:36:54 [main] INFO  c.m.d.e.q.s.ElasticQueryServiceApplication - Starting ElasticQueryServiceApplication v1.0-SNAPSHOT using Java 17.0.6 on 408e359dff3c with PID 1244 (/workspace/BOOT-INF/classes started by root in /workspace)
+2023-04-13 04:36:54 [main] INFO  c.m.d.e.q.s.ElasticQueryServiceApplication - The following 1 profile is active: "elastic_query"
+2023-04-13 04:36:57 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://config-server:8888
+2023-04-13 04:36:57 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=elastic-query-service,config-client, profiles=[elastic_query], label=null, version=2dc25ac8cb6308fd11b25b02fc7f28414ec6f497, state=null
+2023-04-13 04:37:16 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-13 04:37:16 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-04-13 04:37:19 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.microservices.demo.elastic.query.service.dataaccess.repository.UserPermissionRepository; If you want this repository to be a Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ElasticsearchRepository, org.springframework.data.elasticsearch.repository.ElasticsearchRepository
+2023-04-13 04:37:25 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8733 ms. Found 1 Elasticsearch repository interfaces.
+2023-04-13 04:37:35 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-13 04:37:35 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-04-13 04:37:37 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-13 04:37:37 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-04-13 04:37:38 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.microservices.demo.elastic.query.service.dataaccess.repository.UserPermissionRepository; If you want this repository to be a Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ElasticsearchRepository, org.springframework.data.elasticsearch.repository.ElasticsearchRepository
+2023-04-13 04:37:38 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface com.microservices.demo.elastic.query.service.dataaccess.repository.UserPermissionRepository; If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository
+2023-04-13 04:37:38 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 265 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-04-13 04:37:38 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-13 04:37:38 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-13 04:37:39 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 504 ms. Found 1 JPA repository interfaces.
+2023-04-13 04:37:43 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6764 ms. Found 1 Elasticsearch repository interfaces.
+2023-04-13 04:37:56 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=bd1ddbdc-b68f-3722-a02c-37f8371b8324
+2023-04-13 04:37:58 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-13 04:37:58 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-04-13 04:37:58 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface com.microservices.demo.elastic.query.service.dataaccess.repository.UserPermissionRepository; If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository
+2023-04-13 04:37:58 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 384 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-04-13 04:37:59 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-13 04:37:59 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-13 04:38:00 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 603 ms. Found 1 JPA repository interfaces.
+2023-04-13 04:38:20 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=bd1ddbdc-b68f-3722-a02c-37f8371b8324
+2023-04-13 04:38:26 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8186 (http)
+2023-04-13 04:38:26 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8186"]
+2023-04-13 04:38:26 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-04-13 04:38:26 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-04-13 04:38:30 [main] INFO  o.a.c.c.C.[.[.[/elastic-query-service] - Initializing Spring embedded WebApplicationContext
+2023-04-13 04:38:30 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 108212 ms
+2023-04-13 04:38:39 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-04-13 04:38:47 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-04-13 04:38:52 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8183 (http)
+2023-04-13 04:38:53 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8183"]
+2023-04-13 04:38:53 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-04-13 04:38:53 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-04-13 04:38:55 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-13 04:38:57 [main] INFO  o.a.c.c.C.[.[.[/elastic-query-service] - Initializing Spring embedded WebApplicationContext
+2023-04-13 04:38:57 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 120190 ms
+2023-04-13 04:38:58 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.12.Final
+2023-04-13 04:39:09 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-04-13 04:39:10 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-13 04:39:16 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2023-04-13 04:39:16 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-04-13 04:39:18 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-13 04:39:21 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.12.Final
+2023-04-13 04:39:27 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-13 04:39:29 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2023-04-13 04:39:30 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-13 04:39:30 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-13 04:39:36 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-13 04:39:37 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-13 04:39:45 [I/O dispatcher 1] WARN  org.elasticsearch.client.RestClient - request [GET http://elastic-1:9200/] returned 1 warnings: [299 Elasticsearch-7.17.4-79878662c54c886ae89206c685d9f1051a9d6411 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.17/security-minimal-setup.html to enable security."]
+2023-04-13 04:39:46 [main] WARN  org.elasticsearch.client.RestClient - request [HEAD http://elastic-1:9200/twitter-index] returned 1 warnings: [299 Elasticsearch-7.17.4-79878662c54c886ae89206c685d9f1051a9d6411 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.17/security-minimal-setup.html to enable security."]
+2023-04-13 04:39:47 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'elasticDocumentController' defined in file [/workspace/BOOT-INF/classes/com/microservices/demo/elastic/query/service/api/ElasticDocumentController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterElasticQueryService' defined in file [/workspace/BOOT-INF/classes/com/microservices/demo/elastic/query/service/business/impl/TwitterElasticQueryService.class]: Unsatisfied dependency expressed through constructor parameter 3; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webClientConfig' defined in file [/workspace/BOOT-INF/classes/com/microservices/demo/elastic/query/service/config/WebClientConfig.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.microservices.demo.config.ElasticQueryServiceConfigData$WebClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2023-04-13 04:39:47 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-13 04:39:47 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-04-13 04:39:47 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-04-13 04:39:47 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-04-13 04:39:47 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-04-13 04:39:47 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.microservices.demo.elastic.query.service.config.WebClientConfig required a bean of type 'com.microservices.demo.config.ElasticQueryServiceConfigData$WebClient' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.microservices.demo.config.ElasticQueryServiceConfigData$WebClient' in your configuration.
+
+2023-04-13 04:39:50 [I/O dispatcher 1] WARN  org.elasticsearch.client.RestClient - request [GET http://elastic-1:9200/] returned 1 warnings: [299 Elasticsearch-7.17.4-79878662c54c886ae89206c685d9f1051a9d6411 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.17/security-minimal-setup.html to enable security."]
+2023-04-13 04:39:50 [main] WARN  org.elasticsearch.client.RestClient - request [HEAD http://elastic-1:9200/twitter-index] returned 1 warnings: [299 Elasticsearch-7.17.4-79878662c54c886ae89206c685d9f1051a9d6411 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.17/security-minimal-setup.html to enable security."]
+2023-04-13 04:39:51 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'elasticDocumentController' defined in file [/workspace/BOOT-INF/classes/com/microservices/demo/elastic/query/service/api/ElasticDocumentController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterElasticQueryService' defined in file [/workspace/BOOT-INF/classes/com/microservices/demo/elastic/query/service/business/impl/TwitterElasticQueryService.class]: Unsatisfied dependency expressed through constructor parameter 3; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webClientConfig' defined in file [/workspace/BOOT-INF/classes/com/microservices/demo/elastic/query/service/config/WebClientConfig.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.microservices.demo.config.ElasticQueryServiceConfigData$WebClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2023-04-13 04:39:51 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-13 04:39:51 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-04-13 04:39:51 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-04-13 04:39:51 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-04-13 04:39:51 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-04-13 04:39:51 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.microservices.demo.elastic.query.service.config.WebClientConfig required a bean of type 'com.microservices.demo.config.ElasticQueryServiceConfigData$WebClient' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.microservices.demo.config.ElasticQueryServiceConfigData$WebClient' in your configuration.
+
+2023-04-13 05:02:51 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2023-04-13 05:02:51 [main] INFO  c.m.d.e.q.s.ElasticQueryServiceApplication - Starting ElasticQueryServiceApplication v1.0-SNAPSHOT using Java 17.0.6 on 09da5b796a23 with PID 1257 (/workspace/BOOT-INF/classes started by root in /workspace)
+2023-04-13 05:02:51 [main] INFO  c.m.d.e.q.s.ElasticQueryServiceApplication - The following 1 profile is active: "elastic_query"
+2023-04-13 05:02:54 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://config-server:8888
+2023-04-13 05:02:54 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=elastic-query-service,config-client, profiles=[elastic_query], label=null, version=2dc25ac8cb6308fd11b25b02fc7f28414ec6f497, state=null
+2023-04-13 05:02:56 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2023-04-13 05:02:56 [main] INFO  c.m.d.e.q.s.ElasticQueryServiceApplication - Starting ElasticQueryServiceApplication v1.0-SNAPSHOT using Java 17.0.6 on a6c6ed028ef4 with PID 1222 (/workspace/BOOT-INF/classes started by root in /workspace)
+2023-04-13 05:02:56 [main] INFO  c.m.d.e.q.s.ElasticQueryServiceApplication - The following 1 profile is active: "elastic_query"
+2023-04-13 05:02:59 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://config-server:8888
+2023-04-13 05:02:59 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=elastic-query-service,config-client, profiles=[elastic_query], label=null, version=2dc25ac8cb6308fd11b25b02fc7f28414ec6f497, state=null
+2023-04-13 05:03:30 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-13 05:03:30 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-04-13 05:03:31 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.microservices.demo.elastic.query.service.dataaccess.repository.UserPermissionRepository; If you want this repository to be a Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ElasticsearchRepository, org.springframework.data.elasticsearch.repository.ElasticsearchRepository
+2023-04-13 05:03:33 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-13 05:03:33 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-04-13 05:03:34 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.microservices.demo.elastic.query.service.dataaccess.repository.UserPermissionRepository; If you want this repository to be a Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ElasticsearchRepository, org.springframework.data.elasticsearch.repository.ElasticsearchRepository
+2023-04-13 05:03:35 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5470 ms. Found 1 Elasticsearch repository interfaces.
+2023-04-13 05:03:39 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5694 ms. Found 1 Elasticsearch repository interfaces.
+2023-04-13 05:03:48 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-13 05:03:48 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-04-13 05:03:49 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface com.microservices.demo.elastic.query.service.dataaccess.repository.UserPermissionRepository; If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository
+2023-04-13 05:03:49 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 342 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-04-13 05:03:49 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-13 05:03:49 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-13 05:03:50 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 379 ms. Found 1 JPA repository interfaces.
+2023-04-13 05:03:51 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-13 05:03:51 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-04-13 05:03:51 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface com.microservices.demo.elastic.query.service.dataaccess.repository.UserPermissionRepository; If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository
+2023-04-13 05:03:51 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 376 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-04-13 05:03:52 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-13 05:03:52 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-13 05:03:52 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 456 ms. Found 1 JPA repository interfaces.
+2023-04-13 05:04:06 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=bd1ddbdc-b68f-3722-a02c-37f8371b8324
+2023-04-13 05:04:07 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=bd1ddbdc-b68f-3722-a02c-37f8371b8324
+2023-04-13 05:04:33 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8186 (http)
+2023-04-13 05:04:33 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8186"]
+2023-04-13 05:04:33 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-04-13 05:04:33 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-04-13 05:04:36 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8183 (http)
+2023-04-13 05:04:36 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8183"]
+2023-04-13 05:04:36 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-04-13 05:04:36 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-04-13 05:04:41 [main] INFO  o.a.c.c.C.[.[.[/elastic-query-service] - Initializing Spring embedded WebApplicationContext
+2023-04-13 05:04:41 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 107082 ms
+2023-04-13 05:04:41 [main] INFO  o.a.c.c.C.[.[.[/elastic-query-service] - Initializing Spring embedded WebApplicationContext
+2023-04-13 05:04:41 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 101576 ms
+2023-04-13 05:04:53 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-04-13 05:04:56 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-04-13 05:05:00 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-04-13 05:05:02 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-04-13 05:05:03 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-13 05:05:06 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-13 05:05:07 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.12.Final
+2023-04-13 05:05:09 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.12.Final
+2023-04-13 05:05:16 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-13 05:05:17 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-13 05:05:20 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2023-04-13 05:05:20 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2023-04-13 05:05:31 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-13 05:05:31 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-13 05:05:32 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-13 05:05:32 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-13 05:05:41 [I/O dispatcher 1] WARN  org.elasticsearch.client.RestClient - request [GET http://elastic-1:9200/] returned 1 warnings: [299 Elasticsearch-7.17.4-79878662c54c886ae89206c685d9f1051a9d6411 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.17/security-minimal-setup.html to enable security."]
+2023-04-13 05:05:41 [I/O dispatcher 1] WARN  org.elasticsearch.client.RestClient - request [GET http://elastic-1:9200/] returned 1 warnings: [299 Elasticsearch-7.17.4-79878662c54c886ae89206c685d9f1051a9d6411 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.17/security-minimal-setup.html to enable security."]
+2023-04-13 05:05:41 [main] WARN  org.elasticsearch.client.RestClient - request [HEAD http://elastic-1:9200/twitter-index] returned 1 warnings: [299 Elasticsearch-7.17.4-79878662c54c886ae89206c685d9f1051a9d6411 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.17/security-minimal-setup.html to enable security."]
+2023-04-13 05:05:41 [main] WARN  org.elasticsearch.client.RestClient - request [HEAD http://elastic-1:9200/twitter-index] returned 1 warnings: [299 Elasticsearch-7.17.4-79878662c54c886ae89206c685d9f1051a9d6411 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.17/security-minimal-setup.html to enable security."]
+2023-04-13 05:05:48 [main] INFO  c.m.d.e.q.s.config.WebSecurityConfig - jwtDecoder
+2023-04-13 05:05:49 [main] INFO  c.m.d.e.q.s.config.WebSecurityConfig - jwtDecoder
+2023-04-13 05:06:11 [main] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/api-docs']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-04-13 05:06:11 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/api-docs']
+2023-04-13 05:06:11 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@37eca4c0, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@55e8522e, org.springframework.security.web.context.SecurityContextPersistenceFilter@48b53f3d, org.springframework.security.web.header.HeaderWriterFilter@5fc3bf09, org.springframework.security.web.authentication.logout.LogoutFilter@32b273c1, org.springframework.security.oauth2.server.resource.web.BearerTokenAuthenticationFilter@123372f4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4fb53b76, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@57bd0b3c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5c452eb5, org.springframework.security.web.session.SessionManagementFilter@46e77fb7, org.springframework.security.web.access.ExceptionTranslationFilter@61bbe16d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@699794d]
+2023-04-13 05:06:12 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8183"]
+2023-04-13 05:06:12 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8183 (http) with context path '/elastic-query-service'
+2023-04-13 05:06:12 [main] INFO  c.m.d.e.q.s.ElasticQueryServiceApplication - Started ElasticQueryServiceApplication in 255.298 seconds (JVM running for 271.958)
+2023-04-13 06:37:02 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2023-04-13 06:37:02 [main] INFO  c.m.d.e.q.s.ElasticQueryServiceApplication - Starting ElasticQueryServiceApplication v1.0-SNAPSHOT using Java 17.0.6 on 9d90403e6e7a with PID 1250 (/workspace/BOOT-INF/classes started by root in /workspace)
+2023-04-13 06:37:03 [main] INFO  c.m.d.e.q.s.ElasticQueryServiceApplication - The following 1 profile is active: "elastic_query"
+2023-04-13 06:37:06 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://config-server:8888
+2023-04-13 06:37:06 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=elastic-query-service,config-client, profiles=[elastic_query], label=null, version=2dc25ac8cb6308fd11b25b02fc7f28414ec6f497, state=null
+2023-04-13 06:37:06 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2023-04-13 06:37:07 [main] INFO  c.m.d.e.q.s.ElasticQueryServiceApplication - Starting ElasticQueryServiceApplication v1.0-SNAPSHOT using Java 17.0.6 on a1dbafe340eb with PID 1243 (/workspace/BOOT-INF/classes started by root in /workspace)
+2023-04-13 06:37:07 [main] INFO  c.m.d.e.q.s.ElasticQueryServiceApplication - The following 1 profile is active: "elastic_query"
+2023-04-13 06:37:11 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://config-server:8888
+2023-04-13 06:37:11 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=elastic-query-service,config-client, profiles=[elastic_query], label=null, version=2dc25ac8cb6308fd11b25b02fc7f28414ec6f497, state=null
+2023-04-13 06:37:49 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-13 06:37:49 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-04-13 06:37:50 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.microservices.demo.elastic.query.service.dataaccess.repository.UserPermissionRepository; If you want this repository to be a Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ElasticsearchRepository, org.springframework.data.elasticsearch.repository.ElasticsearchRepository
+2023-04-13 06:37:53 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4015 ms. Found 1 Elasticsearch repository interfaces.
+2023-04-13 06:38:05 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-13 06:38:05 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-04-13 06:38:05 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface com.microservices.demo.elastic.query.service.dataaccess.repository.UserPermissionRepository; If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository
+2023-04-13 06:38:05 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 300 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-04-13 06:38:05 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-13 06:38:05 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-13 06:38:06 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 663 ms. Found 1 JPA repository interfaces.
+2023-04-13 06:38:19 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=bd1ddbdc-b68f-3722-a02c-37f8371b8324
+2023-04-13 06:38:41 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8183 (http)
+2023-04-13 06:38:42 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8183"]
+2023-04-13 06:38:42 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-04-13 06:38:42 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-04-13 06:38:48 [main] INFO  o.a.c.c.C.[.[.[/elastic-query-service] - Initializing Spring embedded WebApplicationContext
+2023-04-13 06:38:48 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 102331 ms
+2023-04-13 06:39:02 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-04-13 06:39:07 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-04-13 06:39:10 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-13 06:39:13 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.12.Final
+2023-04-13 06:39:20 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-13 06:39:23 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2023-04-13 06:39:34 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-13 06:39:34 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-13 06:39:49 [I/O dispatcher 1] WARN  org.elasticsearch.client.RestClient - request [GET http://elastic-1:9200/] returned 1 warnings: [299 Elasticsearch-7.17.4-79878662c54c886ae89206c685d9f1051a9d6411 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.17/security-minimal-setup.html to enable security."]
+2023-04-13 06:39:49 [main] WARN  org.elasticsearch.client.RestClient - request [HEAD http://elastic-1:9200/twitter-index] returned 1 warnings: [299 Elasticsearch-7.17.4-79878662c54c886ae89206c685d9f1051a9d6411 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.17/security-minimal-setup.html to enable security."]
+2023-04-13 06:40:03 [main] INFO  c.m.d.e.q.s.config.WebSecurityConfig - jwtDecoder
+2023-04-13 06:40:27 [main] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/api-docs']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-04-13 06:40:27 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/api-docs']
+2023-04-13 06:40:27 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@58ed5ed3, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@133e7789, org.springframework.security.web.context.SecurityContextPersistenceFilter@127c5f20, org.springframework.security.web.header.HeaderWriterFilter@67599bae, org.springframework.security.web.authentication.logout.LogoutFilter@7da3d617, org.springframework.security.oauth2.server.resource.web.BearerTokenAuthenticationFilter@30282260, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@17d13926, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2d728a9c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@62f47cac, org.springframework.security.web.session.SessionManagementFilter@10387d6d, org.springframework.security.web.access.ExceptionTranslationFilter@52ebacbf, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@94047a4]
+2023-04-13 06:40:30 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8183"]
+2023-04-13 06:40:30 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8183 (http) with context path '/elastic-query-service'
+2023-04-13 06:40:30 [main] INFO  c.m.d.e.q.s.ElasticQueryServiceApplication - Started ElasticQueryServiceApplication in 278.429 seconds (JVM running for 309.314)
